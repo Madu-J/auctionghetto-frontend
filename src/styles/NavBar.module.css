@@ -2,3 +2,17 @@
     background-color: #fff;
     border: 1px solid #138d46;
 }
+.NavLink {
+    padding: 5px;
+  }
+  
+  .Active i {
+    color: rgb(148, 203, 236);
+  }
+  .Slogan {
+    display: inline;
+    font-size: 0.8rem;
+    font-style: italic;
+    color:#fff;
+    padding: 0 2px 0 10px;
+  }
