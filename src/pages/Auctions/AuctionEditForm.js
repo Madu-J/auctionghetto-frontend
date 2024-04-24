@@ -1,33 +1,26 @@
-import { 
-    Button, Row, Col, Image, Form, Card, Alert 
-} from 'react-bootstrap';
-import Upload from "../../assets/upload.png";
-import styles from "../../styles/AuctionCreateEditForm.module.css";
+import Image from 'react-bootstrap/Image';
+import Alert from 'react-bootstrap/Alert';
+import styles from '../../styles/AuctionCreateEditForm.module.css';
 import appStyles from "../../App.module.css";
-import btnStyles from "../../styles/Button.module.css";
-import Asset from "../../components/Asset";
-import { useRef, useState } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { axiosReq } from "../../api/axiosDefaults";
-import { useRedirect } from "../../hooks/useRedirect";
+import btnStyles from '../../styles/Button.module.css';
+import { useEffect, useRef, useState } from 'react';
+import { axiosReq } from '../../api/axiosDefaults';
+import {
+  useHistory,
+  useParams,
+} from "react-router-dom/cjs/react-router-dom.min";
 
-// Component used for creating a Auctionghetto post.
-// Takes input from the user in the forms and post it to the API
-// Includes error handling that shows an alert to the user.
-function AuctionCreateForm() {
-  useRedirect("loggedOut");
- 
+// Component for editing an existing auction.
+// Prepopulates the existing data into the form.
+function AuctionEditForm() {
   const [errors, setErrors] = useState({});
- 
+
   const [auctionData, setAuctionData] = useState({
     title: "",
-    productcategory: "home",
-    item_products: 'furniture',
-    autocategory: 'car',
-    auctionstartday: 'monday',
+    productcategory: "",
     description: "",
     year: "",
-    fueltype: "petrol",
+    fueltype: "",
     price: "",
     image: "",
   });
@@ -35,9 +28,6 @@ function AuctionCreateForm() {
   const {
     title,
     productcategory,
-    item_products,
-    autocategory,
-    auctionstartday,
     description,
     year,
     fueltype,
@@ -45,12 +35,53 @@ function AuctionCreateForm() {
     image,
   } = auctionData;
 
-  const imageInput = useRef(null);
+   const imageInput = useRef(null);
   const history = useHistory();
+  const { id } = useParams();
+
+  useEffect(() => {
+    const handleMount = async () => {
+      try {
+        const { data } = await axiosReq.get(`/auctions/${id}/`);
+        const {
+            title,
+            productcategory,
+            item_products,
+            autocategory,
+            description,
+            auctionstartday,
+            year,
+            fueltype,
+            price,
+            image,
+            is_owner,
+        } = data;
+
+        is_owner
+          ? setAuctionData({
+              title,
+              productcategory,
+              item_products,
+              autocategory,
+              description,
+              auctionstartday,
+              year,
+              fueltype,
+              price,
+              image,
+            })
+          : history.push("/");
+      } catch (err) {
+      //console.log(err);
+    }
+    };
+
+    handleMount();
+  }, [history, id]);
 
   const handleChange = (event) => {
     setAuctionData({
-      ...auctionData,
+      ...autotraderData,
       [event.target.name]: event.target.value,
     });
   };
@@ -68,7 +99,7 @@ function AuctionCreateForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
- 
+
     formData.append("title", title);
     formData.append("productcategory", productcategory);
     formData.append("item_products", item_products);
@@ -78,19 +109,20 @@ function AuctionCreateForm() {
     formData.append("year", year);
     formData.append("fueltype", fueltype);
     formData.append("price", price);
-    formData.append("image", imageInput.current.files[0]);
- 
+    if (imageInput?.current?.files[0]) {
+      formData.append("image", imageInput.current.files[0]);
+    }
     try {
-      const { data } = await axiosReq.post("/auctions/", formData);
-      history.push(`/auctions/${data.id}`);
-    } catch (error) {
-      //console.log(error);
-      if (error.response?.status !== 401) {
-        setErrors(error.response?.data);
+      await axiosReq.put(`/auctions/${id}/`, formData);
+      history.push(`/auctions/${id}`);
+    } catch (err) {
+      //console.log(err);
+      if (err.response?.status !== 401) {
+        setErrors(err.response?.data);
       }
     }
-  };  
- 
+  };
+
   const textFields = (
     <div className="text-center">
       <Form.Group>
@@ -114,19 +146,19 @@ function AuctionCreateForm() {
           as="select"
           type="text"
           name="productcategory"
-          value={productcategory}
+          value={brand}
           onChange={handleChange}
-        >
-          <option value="home">Home</option>
-          <option value="office">Office</option>
-          <option value="building">Building</option>
-          <option value="vehicle">Vehicle</option>
-          <option value="industry">Industry</option>
-          <option value="agriculture">Agriculture</option>
+        >        
+        <option value="home">Home</option>
+        <option value="office">Office</option>
+        <option value="building">Building</option>
+        <option value="vehicle">Vehicle</option>
+        <option value="industry">Industry</option>
+        <option value="agriculture">Agriculture</option>
         </Form.Control>
-      </Form.Group>
+        </Form.Group>
 
-      <Form.Group>
+        <Form.Group>
         <Form.Label>Item products</Form.Label>
         <Form.Control
           as="select"
@@ -181,7 +213,7 @@ function AuctionCreateForm() {
         </Form.Control>
       </Form.Group>
 
-     <Form.Group>
+      <Form.Group>
         <Form.Label>Description</Form.Label>
         <Form.Control
           as="textarea"
@@ -213,19 +245,7 @@ function AuctionCreateForm() {
           {message}
         </Alert>
       ))}
-      <Form.Group>
-        <Form.Label>Autocategory</Form.Label>
-        <Form.Control
-          as="select"
-          type="text"
-          name="autocategory"
-          value={autocategory}
-          onChange={handleChange}
-        >
-          <option value="car">Car</option>
-          <option value="truck">Truck</option>
-        </Form.Control>
-      </Form.Group>
+
       <Form.Group>
         <Form.Label>Fueltype</Form.Label>
         <Form.Control
@@ -234,12 +254,12 @@ function AuctionCreateForm() {
           name="fueltype"
           value={fueltype}
           onChange={handleChange}
-        >  
-          <option value='petrol'>Petrol</option>
-          <option value='hybrid'>Hybrid</option>
-          <option value='diesel'>Diesel</option>
-          <option value='electric'>Electric</option>
-          <option value='other'>Other</option>
+        >        
+          <option value="petrol">Petrol</option>
+          <option value="diesel">Diesel</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="electric">Electric</option>
+
         </Form.Control>
       </Form.Group>
       <Form.Group>
@@ -265,7 +285,7 @@ function AuctionCreateForm() {
         cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        create
+        save
       </Button>
     </div>
   );
@@ -278,31 +298,17 @@ function AuctionCreateForm() {
             className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
           >
             <Form.Group className="text-center">
-              {image ? (
-                <>
-                  <figure>
-                    <Image className={appStyles.Image} src={image} rounded />
-                  </figure>
-                  <div>
-                    <Form.Label
-                      className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
-                      htmlFor="image-upload"
-                    >
-                      Change the image
-                    </Form.Label>
-                  </div>
-                </>
-              ) : (
+              <figure>
+                <Image className={appStyles.Image} src={image} rounded />
+              </figure>
+              <div>
                 <Form.Label
-                  className="d-flex justify-content-center"
+                  className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
                   htmlFor="image-upload"
                 >
-                  <Asset
-                src={Upload}
-                message="Click or tap to upload an image"
-              />
-            </Form.Label>
-           )}
+                  Change the image
+                </Form.Label>
+              </div>
 
               <Form.File
                 id="image-upload"
@@ -316,6 +322,7 @@ function AuctionCreateForm() {
                 {message}
               </Alert>
             ))}
+
             <div className="d-md-none">{textFields}</div>
           </Container>
         </Col>
@@ -327,4 +334,4 @@ function AuctionCreateForm() {
   );
 }
 
-export default AuctionCreateForm;
+export default AuctionEditForm;
