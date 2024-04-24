@@ -5,6 +5,8 @@ import { Route, Switch } from 'react-router-dom';
 import { useCurrentUser } from './contexts/CurrentUserContext';
 import './api/axiosDefaults';
 import SignUpForm from "./pages/auth/SignUpForm";
+import SignInForm from "./pages/auth/SignInForm";
+
 
 function App() {
   const currentUser = useCurrentUser();
