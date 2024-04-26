@@ -10,8 +10,7 @@ import {
   useSetCurrentUser,
 } from "../contexts/CurrentUserContext";
 import Avatar from './Avatar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
+
 
 const NavBar = () => {
     const currentUser = useCurrentUser();

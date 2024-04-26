@@ -1,0 +1,32 @@
+.Auction {
+    background-color: #ffffff;
+    border: 1px solid #dadadf;
+    box-shadow: 1px 3px 2px #888888;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+ 
+.Auction figure,
+  h5 {
+    margin: 0 0;
+}
+ 
+.Bookmark {
+    color: #f85032;
+}
+ 
+.Bookmark:hover {
+    color: #2142b2;
+}
+ 
+.auction i {
+    color: #333;
+    font-size: 2rem;
+    padding: 7px;
+    vertical-align: middle;
+}
+ 
+i:hover {
+    color: #333;
+}
