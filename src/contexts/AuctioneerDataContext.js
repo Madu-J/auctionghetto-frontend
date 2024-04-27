@@ -10,7 +10,7 @@ export const useAuctioneerData = () => useContext(AuctioneerDataContext);
 export const useSetAuctioneerData = () => useContext(SetAuctioneerDataContext);
 
 export const AuctioneerDataProvider = ({ children }) => {
-  const [auctioneerData, setProfileData] = useState({
+  const [auctioneerData, setAuctioneerData] = useState({
     pageAuctioneer: { results: [] },
     popularAuctioneers: { results: [] },
   });

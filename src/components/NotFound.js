@@ -9,7 +9,7 @@ const NotFound = () => {
     <div className={styles.Margin}>
       <Asset
         src={NoResultsImage}
-        message={`Sorry, the page you're looking for doesn't exist`}
+        message={`Sorry, the page you're looking for cannot be found`}
       />
     </div>
   );

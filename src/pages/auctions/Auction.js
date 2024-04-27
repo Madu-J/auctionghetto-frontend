@@ -1,5 +1,8 @@
 import React from "react";
-import { Row, Col, Media, Tooltip, Card, OverlayTrigger } from 'react-bootstrap';
+import {
+   Row, Col, Media, Tooltip, 
+   Card, OverlayTrigger 
+  } from 'react-bootstrap';
 import { Link, useHistory  } from 'react-router-dom';
 import { axiosRes } from "../../api/axiosDefaults";
 import Avatar from "../../components/Avatar";
@@ -40,7 +43,7 @@ function Auction(props) {
       setAuctions((setAuctions) => ({
         ...setAuctions,
         results: setAuctions.results.map((auction) => {
-          return auction.id === id ? { ...auctionr, bookmark_id: data.id } : auction;
+          return auction.id === id ? { ...auction, bookmark_id: data.id } : auction;
         }),
       }));
     } catch (err) {
@@ -121,7 +124,7 @@ function Auction(props) {
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">Productcategory</span>
                 <span className="font-weight-bold text-capitalize">
-                  {brand}
+                  {productcategory}
                 </span>
               </Col>
             </Row>

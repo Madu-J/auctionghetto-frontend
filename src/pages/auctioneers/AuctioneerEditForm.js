@@ -264,8 +264,8 @@ const AuctioneerEditForm = () => {
                 accept="image/*"
                 onChange={(e) => {
                   if (e.target.files.length) {
-                    setProfileData({
-                      ...profileData,
+                    setAuctioneerData({
+                      ...auctioneerData,
                       image: URL.createObjectURL(e.target.files[0]),
                     });
                   }

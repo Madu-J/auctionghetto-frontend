@@ -1,18 +1,21 @@
 import { 
-    Button, Row, Col, Image, Form, Card, Alert 
+    Button, Row, Col, Image, Form, Alert, Container
 } from 'react-bootstrap';
 import Upload from "../../assets/upload.png";
-import styles from "../../styles/AuctionCreateEditForm.module.css";
+import styles 
+from "../../styles/AuctionCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import Asset from "../../components/Asset";
 import { useRef, useState } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import {
+   useHistory 
+  } from "react-router-dom/cjs/react-router-dom.min";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
 
-// Component used for creating a Auctionghetto post.
-// Takes input from the user in the forms and post it to the API
+// Component used for creating a Auctionghetto posting.
+// Collects input data from user in the forms and pass to api.
 // Includes error handling that shows an alert to the user.
 function AuctionCreateForm() {
   useRedirect("loggedOut");

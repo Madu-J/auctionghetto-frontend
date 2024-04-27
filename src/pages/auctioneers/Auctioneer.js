@@ -3,7 +3,7 @@ import styles from '../../styles/Auctioneer.module.css';
 import btnStyles from "../../styles/Button.module.css";
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import Button from 'react-bootstrap/Button';
-import { useSetProfileData } from '../../contexts/AuctioneerDataContext';
+import { useSetAuctioneerData } from '../../contexts/AuctioneerDataContext';
 import { Link } from 'react-router-dom';
 import Avatar from '../../components/Avatar';
 

@@ -38,7 +38,7 @@ function AuctionsList({ message, filter = "" }) {
 
     setHasLoaded(false);
     const timer = setTimeout(() => {
-      fetchAuction();
+      fetchAuctions();
     }, 1000);
 
     return () => {
@@ -49,7 +49,7 @@ function AuctionsList({ message, filter = "" }) {
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <PopularProfiles mobile />
+        <PopularAuctioneers mobile />
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}

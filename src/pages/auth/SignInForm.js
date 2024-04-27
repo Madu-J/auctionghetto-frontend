@@ -4,13 +4,14 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import {
-    Form, Button, Image, Col, Row, Container
-} from 'react-bootstrap';
+    Form, Button, Image, Col, 
+    Row, Container, Alert 
+  } from 'react-bootstrap';
 import axios from 'axios';
-import Alert from 'react-bootstrap/Alert';
-import logo from '../assets/logo.png';
+import Logo from '../../assets/logo.png';
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { setTokenTimestamp } from "../../utils/utils";
+import { useRedirect } from "../../hooks/useRedirect";
 
 function SignInForm() {
     const setCurrentUser = useSetCurrentUser();

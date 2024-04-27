@@ -17,9 +17,8 @@ const AuctionList = (props) => {
       auctioneer_id,
       bookmark_id,
       title,
-      
       year,
-      
+      item_products,
       fueltype,
       price,
       image,

@@ -14,6 +14,9 @@ import {
 import PopularAuctioneers from "./PopularAuctioneers";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Auction from "../auctions/Auction";
+import { fetchMoreData } from '../../utils/utils';
+import NoResults from '../../assets/no-results.png';
+import { AuctioneerEditDropdown } from '../../components/MoreDropdown';
 
 
 /*Displays information comprehensively about auctioneer, owner of a profile.
@@ -128,7 +131,7 @@ const AuctioneerPage = () => {
         <hr />
         {auctioneerAuctions.results.length ? (
           <InfiniteScroll
-            children={profileAuctions.results.map((auction) => (
+            children={auctioneerAuctions.results.map((auction) => (
               <Auction key={auction.id} {...auction} setAuctions={setAuctioneerAuctions} />
             ))}
             dataLength={auctioneerAuctions.results.length}

@@ -25,7 +25,7 @@ const PopularAuctioneers = ({ mobile }) => {
               ))}
             </div>
           ) : (
-            popularAuctioneers.results.map((profile) => (
+            popularAuctioneers.results.map((auctioneer) => (
               <Auctioneer key={auctioneer.id} auctioneer={auctioneer} />
             ))
           )}

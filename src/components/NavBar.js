@@ -10,8 +10,9 @@ import {
   useSetCurrentUser,
 } from "../contexts/CurrentUserContext";
 import Avatar from './Avatar';
+import useClickOutsideToggle from '../hooks/useClickOutsideToggle';
 
-
+// Navigation component and links
 const NavBar = () => {
     const currentUser = useCurrentUser();
     const setCurrentUser = useSetCurrentUser();
@@ -53,14 +54,19 @@ const NavBar = () => {
           >
             <i className="fas fa-heart"></i>Bookmark
           </NavLink>
-          <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
+          <NavLink 
+          className={styles.NavLink} 
+          to="/" onClick={handleSignOut}>
             <i className="fas fa-sign-out-alt"></i>Sign out
           </NavLink>
           <NavLink
             className={styles.NavLink}
             to={`/auctioneers/${currentUser?.auctioneer_id}`}
           >
-            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={40} />
+            <Avatar 
+            src={currentUser?.auctioneer_image} 
+            text="Auctioneer" 
+            height={40} />
           </NavLink>
         </>
       );
