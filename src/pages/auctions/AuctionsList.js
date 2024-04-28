@@ -6,7 +6,7 @@ import {
 } from 'react-bootstrap';
 import { 
     useLocation 
-} from "react-router-dom/cjs/react-router-dom.min";
+} from "react-router-dom";
 import { axiosReq } from '../../api/axiosDefaults';
 import Asset from "../../components/Asset";
 import AuctionList from "./AuctionList";
