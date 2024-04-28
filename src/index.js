@@ -8,11 +8,14 @@ import { CurrentUserProvider } from './contexts/CurrentUserContext';
 import { AuctioneerDataProvider } from './contexts/AuctioneerDataContext';
 
 ReactDOM.render(
-  <React.StrictMode>
+  
     <Router>
-    <App />
-    </Router>
-  </React.StrictMode>,
+      <CurrentUserProvider>
+        <AuctioneerDataProvider>
+          <App />
+        </AuctioneerDataProvider>
+      </CurrentUserProvider>
+    </Router>,
   document.getElementById('root')
 );
 
