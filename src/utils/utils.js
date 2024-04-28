@@ -47,8 +47,7 @@ export const unfollowHelper = (auctioneer, clickedAuctioneer) => {
     ? // This is the profile of the logged in user
       // update its following count
       { ...auctioneer, following_count: auctioneer.following_count - 1 }
-    : // this is not the profile the user clicked on or the profile
-      // the user owns, so just return it unchanged
+    : // this is not the profile the user clicked on
       auctioneer;
 };
 
