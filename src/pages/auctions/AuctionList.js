@@ -45,7 +45,7 @@ const AuctionList = (props) => {
   
     const handleUnbookmark = async () => {
       try {
-        await axiosRes.delete(`/saved/${bookmark_id}/`);
+        await axiosRes.delete(`/bookmarked/${bookmark_id}/`);
         setAuctions((setAuctions) => ({
           ...setAuctions,
           results: setAuctions.results.map((auction) => {
