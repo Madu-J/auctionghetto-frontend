@@ -27,7 +27,7 @@ export const AuctioneerDataProvider = ({ children }) => {
         ...prevState,
         pageAuctioneer: {
           results: prevState.pageAuctioneer.results.map((auctioneer) =>
-            followHelper(auctioneer, clickedAuctioneer, data.id)
+            followStig(auctioneer, clickedAuctioneer, data.id)
           ),
         },
         popularActioneers: {
