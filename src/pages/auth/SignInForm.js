@@ -52,7 +52,9 @@ function SignInForm() {
             <h1 className={styles.Header}>sign in</h1>
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="username">
-                <Form.Label className="d-none">Username</Form.Label>
+                <Form.Label 
+                className="d-none">Username
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Username"
@@ -69,7 +71,9 @@ function SignInForm() {
               ))}
   
               <Form.Group controlId="password">
-                <Form.Label className="d-none">Password</Form.Label>
+                <Form.Label 
+                className="d-none">Password
+                </Form.Label>
                 <Form.Control
                   type="password"
                   placeholder="Password"
@@ -85,7 +89,9 @@ function SignInForm() {
                 </Alert>
               ))}
               <Button
-                className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
+                className={`${
+                  btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright
+                  }`}
                 type="submit"
               >
                 Sign In
@@ -107,7 +113,8 @@ function SignInForm() {
           md={6}
           className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
         >
-          <Image className={`${appStyles.FillerImage}`} src={Logo} />
+          <Image className={`${appStyles.FillerImage}`} 
+          src={Logo} />
         </Col>
       </Row>
     );
