@@ -53,7 +53,7 @@ export function AuctioneerEditDropdown({ id }) {
         <Dropdown.Menu>
           <Dropdown.Item
             onClick={() => history.push(`/auctioneers/${id}/edit`)}
-            aria-label="edit-profile"
+            aria-label="edit-auctioneer"
           >
             <i className="fas fa-edit" /> edit profile
           </Dropdown.Item>

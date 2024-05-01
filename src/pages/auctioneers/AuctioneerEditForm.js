@@ -1,14 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
-import { Container, Form, Alert, Col, Row, Image, Button } from 'react-bootstrap';
-import { axiosReq } from '../../api/axiosDefaults';
+import React, { 
+  useState, useEffect, useRef 
+} from 'react';
+import { 
+  useHistory, useParams 
+} from 'react-router-dom';
+import { 
+  Container, Form, Alert, 
+  Col, Row, Image, Button 
+} from 'react-bootstrap';
+import { 
+  axiosReq 
+} from '../../api/axiosDefaults';
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from '../../contexts/CurrentUserContext';
-
-import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import btnStyles from "../../styles/Button.module.css";
+
 
 /* Component includes the form for creating or updating
 user profile and error handling input fields*/
@@ -229,7 +238,7 @@ const AuctioneerEditForm = () => {
         cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        save
+        bookmark
       </Button>
     </>
   );

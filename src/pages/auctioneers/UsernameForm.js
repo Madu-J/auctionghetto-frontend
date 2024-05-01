@@ -1,15 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { 
+  useEffect, useState 
+} from "react";
 
-import { Container, Row, Col, Form, Button,  Alert } from 'react-bootstrap';
-import { useHistory, useParams } from "react-router-dom";
-import { axiosRes } from '../../api/axiosDefaults';
+import { 
+  Container, Row, Col, 
+  Form, Button,  Alert 
+} from 'react-bootstrap';
+import { 
+  useHistory, useParams 
+} from "react-router-dom";
+import { 
+  axiosRes 
+} from '../../api/axiosDefaults';
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../../contexts/CurrentUserContext";
 
-import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import btnStyles from "../../styles/Button.module.css";
+
 
 const UsernameForm = () => {
   const [username, setUsername] = useState("");
@@ -75,7 +85,7 @@ const UsernameForm = () => {
               className={`${btnStyles.Button} ${btnStyles.Blue}`}
               type="submit"
             >
-              save
+              bookmark
             </Button>
           </Form>
         </Container>

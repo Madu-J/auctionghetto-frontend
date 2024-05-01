@@ -1,9 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+   useEffect, useState 
+  } from 'react';
 
-import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
-import { useHistory, useParams } from 'react-router-dom';
-import { axiosRes } from "../../api/axiosDefaults";
-import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import { 
+  Container, Row, Col, 
+  Form, Button, Alert 
+} from 'react-bootstrap';
+import { 
+  useHistory, useParams 
+} from 'react-router-dom';
+import { 
+  axiosRes 
+} from "../../api/axiosDefaults";
+import { 
+  useCurrentUser 
+} from "../../contexts/CurrentUserContext";
 
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
@@ -91,7 +102,7 @@ const UserPasswordForm = () => {
               type="submit"
               className={`${btnStyles.Button} ${btnStyles.Blue}`}
             >
-              save
+              bookmark
             </Button>
           </Form>
         </Container>
