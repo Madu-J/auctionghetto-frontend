@@ -31,7 +31,7 @@ const AuctionList = (props) => {
   
     const handleBookmark = async () => {
       try {
-        const { data } = await axiosRes.post("/saved/", { auction: id });
+        const { data } = await axiosRes.post("/bookmarked/", { auction: id });
         setAuctions((setAuctions) => ({
           ...setAuctions,
           results: setAuctions.results.map((auction) => {
@@ -74,7 +74,7 @@ const AuctionList = (props) => {
                       placement="top"
                       overlay={<Tooltip>You cannot bookmark your own listed item!</Tooltip>}
                     >
-                      <i className="far fa-heart" />
+                      <i className="fas fa-bookmark" />
                     </OverlayTrigger>
                   ) : bookmark_id ? (
                     <span onClick={handleUnbookmark}>
@@ -89,7 +89,7 @@ const AuctionList = (props) => {
                       placement="top"
                       overlay={<Tooltip>Log in to bookmark auction!</Tooltip>}
                     >
-                      <i className="fas fa-bookmark" />
+                      <i className="fas fa-heart" />
                     </OverlayTrigger>
                   )}
   
@@ -114,7 +114,7 @@ const AuctionList = (props) => {
                     {year}
                   </div>
                   <div>
-                    <i className="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bicycle"></i>
                     {item_products}
                   </div>
                   
@@ -129,7 +129,7 @@ const AuctionList = (props) => {
                 <Col className="d-flex justify-content-between mt-1">
                   <div className="font-weight-bold">{price}€</div>
                   <div>
-                    <span>Seller:&nbsp;</span>
+                    <span>Auctioneer:&nbsp;</span>
                     <Link to={`/auctioneers/${auctioneer_id}`}>{owner}</Link>
                   </div>
                 </Col>
