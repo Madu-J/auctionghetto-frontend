@@ -8,7 +8,7 @@ import { CurrentUserProvider } from './contexts/CurrentUserContext';
 import { AuctioneerDataProvider } from './contexts/AuctioneerDataContext';
 
 ReactDOM.render(
-  
+
     <Router>
       <CurrentUserProvider>
         <AuctioneerDataProvider>
@@ -16,6 +16,7 @@ ReactDOM.render(
         </AuctioneerDataProvider>
       </CurrentUserProvider>
     </Router>,
+  
   document.getElementById('root')
 );
 
