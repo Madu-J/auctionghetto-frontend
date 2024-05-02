@@ -17,8 +17,10 @@ const AuctionList = (props) => {
       auctioneer_id,
       bookmark_id,
       title,
+      categories,
+      items,
+      autocategory,
       year,
-      item_products,
       fueltype,
       price,
       image,
@@ -108,16 +110,22 @@ const AuctionList = (props) => {
   
               <Row>
                 <Col className="d-flex justify-content-between">
-  
+                <div>
+                    <i className="fa-solid fa-house"></i>
+                    {categories}
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-bicycle"></i>
+                    {items}
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-car"></i>
+                    {autocategory}
+                  </div>
                   <div>
                     <i className="fa-solid fa-calendar-days"></i>
                     {year}
                   </div>
-                  <div>
-                    <i className="fa-solid fa-bicycle"></i>
-                    {item_products}
-                  </div>
-                  
                   <div className="text-capitalize">
                     <i className="fa-solid fa-gas-pump"></i>
                     {fueltype}
