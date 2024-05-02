@@ -19,10 +19,10 @@ function Auction(props) {
     auctioneer_image,
     bookmark_id,
     title,
-    productcategory,
-    item_products,
-    autocategory,
-    auctionstartday,
+    categories,
+    items,
+    auto,
+    auctionday,
     description,
     year,
     fueltype,
@@ -122,9 +122,9 @@ function Auction(props) {
                 <i className="fa-solid fa-bookmark"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Productcategory</span>
+                <span className="d-block text-muted">categories</span>
                 <span className="font-weight-bold text-capitalize">
-                  {productcategory}
+                  {categories}
                 </span>
               </Col>
             </Row>
@@ -135,8 +135,8 @@ function Auction(props) {
                 <i className="fa-solid fa-road"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Item Products</span>
-                <span className="font-weight-bold">{item_products}</span>
+                <span className="d-block text-muted">Items</span>
+                <span className="font-weight-bold">{items}</span>
               </Col>
             </Row>
           </Col>
@@ -146,19 +146,19 @@ function Auction(props) {
                 <i className="fa-solid fa-road"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">autocategory</span>
-                <span className="font-weight-bold">{autocategory}</span>
+                <span className="d-block text-muted">auto</span>
+                <span className="font-weight-bold">{auto}</span>
               </Col>
             </Row>
           </Col>
           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-road"></i>
+              <i className="fa-solid fa-calendar-days">day</i>
               </Col>
               <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">auctionstartday</span>
-                <span className="font-weight-bold">{auctionstartday}</span>
+                <span className="d-block text-muted">auctionday</span>
+                <span className="font-weight-bold">{auctionday}</span>
               </Col>
             </Row>
           </Col>
