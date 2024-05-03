@@ -94,22 +94,22 @@ function Auction(props) {
             placement="top"
             overlay={<Tooltip>User cannot bookmark own listed item!</Tooltip>}
           >
-            <i className="far fa-heart" />
+            <i className="far fa-bookmark" />
           </OverlayTrigger>
         ) : bookmark_id ? (
           <span onClick={handleUnbookmark}>
-            <i className={`fas fa-heart ${styles.Heart}`} />
+            <i className={`fas fa-heart ${styles.Bookmark}`} />
           </span>
         ) : currentUser ? (
           <span onClick={handleBookmark}>
-            <i className={`far fa-heart ${styles.HeartOutline}`} />
+            <i className={`far fa-bookmark ${styles.BookmarkOutline}`} />
           </span>
         ) : (
           <OverlayTrigger
             placement="top"
             overlay={<Tooltip>Log in to bookmark an auction!</Tooltip>}
           >
-            <i className="far fa-heart" />
+            <i className="far fa-bookmark" />
           </OverlayTrigger>
         )}
       </div>
@@ -119,10 +119,10 @@ function Auction(props) {
           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-bookmark"></i>
+                <i className="fa-solid fa-shop"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">categories</span>
+                <span className="d-block text-muted">Categories</span>
                 <span className="font-weight-bold text-capitalize">
                   {categories}
                 </span>
@@ -132,7 +132,7 @@ function Auction(props) {
           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-road"></i>
+                <i className="fa-solid fa-vacuum"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">Items</span>
@@ -143,7 +143,7 @@ function Auction(props) {
           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-road"></i>
+                <i className="fa-solid fa-truck-monster"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">auto</span>
@@ -154,7 +154,7 @@ function Auction(props) {
           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
-              <i className="fa-solid fa-calendar-days"></i>
+              <i className="fa-solid fa-calendar-day"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">auctionday</span>

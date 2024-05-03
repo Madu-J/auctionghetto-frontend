@@ -20,6 +20,7 @@ const AuctionList = (props) => {
       categories,
       items,
       auto,
+      auctionday,
       year,
       fueltype,
       price,
@@ -111,16 +112,20 @@ const AuctionList = (props) => {
               <Row>
                 <Col className="d-flex justify-content-between">
                 <div>
-                    <i className="fa-solid fa-house"></i>
+                    <i className="fa-solid fa-shop"></i>
                     {categories}
                   </div>
                   <div>
-                    <i className="fa-solid fa-bicycle"></i>
+                    <i className="fa-solid fa-vacuum"></i>
                     {items}
                   </div>
                   <div>
-                    <i className="fa-solid fa-car"></i>
+                    <i className="fa-solid fa-truck-mosnter"></i>
                     {auto}
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-calendar-day"></i>
+                    {auctionday}
                   </div>
                   <div>
                     <i className="fa-solid fa-calendar-days"></i>

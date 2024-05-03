@@ -24,10 +24,10 @@ function AuctionCreateForm() {
  
   const [auctionData, setAuctionData] = useState({
     title: "",
-    productcategory: "home",
-    item_products: 'furniture',
-    autocategory: 'car',
-    auctionstartday: 'monday',
+    categories: "home",
+    items: 'furniture',
+    auto: 'car',
+    auctionday: 'monday',
     description: "",
     year: "",
     fueltype: "petrol",
@@ -37,10 +37,10 @@ function AuctionCreateForm() {
 
   const {
     title,
-    productcategory,
-    item_products,
-    autocategory,
-    auctionstartday,
+    categories,
+    items,
+    auto,
+    auctionday,
     description,
     year,
     fueltype,
@@ -73,10 +73,10 @@ function AuctionCreateForm() {
     const formData = new FormData();
  
     formData.append("title", title);
-    formData.append("productcategory", productcategory);
-    formData.append("item_products", item_products);
-    formData.append("autocategory", autocategory);
-    formData.append("auctionstartday", auctionstartday);
+    formData.append("categories", categories);
+    formData.append("items", items);
+    formData.append("auto", auto);
+    formData.append("auctionday", auctionday);
     formData.append("description", description);
     formData.append("year", year);
     formData.append("fueltype", fueltype);
@@ -112,12 +112,12 @@ function AuctionCreateForm() {
       ))}
 
       <Form.Group>
-        <Form.Label>Productcategory</Form.Label>
+        <Form.Label>Categories</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="productcategory"
-          value={productcategory}
+          name="categories"
+          value={categories}
           onChange={handleChange}
         >
           <option value="home">Home</option>
@@ -130,12 +130,12 @@ function AuctionCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Item products</Form.Label>
+        <Form.Label>Items</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="item_products"
-          value={item_products}
+          name="items"
+          value={items}
           onChange={handleChange}
         >
           <option value='furniture'>Furniture</option>
@@ -143,19 +143,20 @@ function AuctionCreateForm() {
           <option value='table'>Table</option>
           <option value='bicycle'>Bicycle</option>
           <option value='bed'>Bed</option>
-          <option value='pc'>PC</option>
+          <option value='refrigerator'>Refrigerator</option>
+          <option value='pc'>Pc</option>
           <option value='phones'>Phones</option>
           <option value='other'>Other</option> 
         </Form.Control>
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Autocategory</Form.Label>
+        <Form.Label>Auto</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="autocategory"
-          value={autocategory}
+          name="auto"
+          value={auto}
           onChange={handleChange}
         >
           <option value='car'>Car</option>
@@ -169,12 +170,12 @@ function AuctionCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>auctionstartday</Form.Label>
+        <Form.Label>auctionday</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="auctionstartday"
-          value={auctionstartday}
+          name="auctionday"
+          value={auctionday}
           onChange={handleChange}
         >
           <option value='monday'>Monday</option>
@@ -216,19 +217,7 @@ function AuctionCreateForm() {
           {message}
         </Alert>
       ))}
-      <Form.Group>
-        <Form.Label>Autocategory</Form.Label>
-        <Form.Control
-          as="select"
-          type="text"
-          name="autocategory"
-          value={autocategory}
-          onChange={handleChange}
-        >
-          <option value="car">Car</option>
-          <option value="truck">Truck</option>
-        </Form.Control>
-      </Form.Group>
+
       <Form.Group>
         <Form.Label>Fueltype</Form.Label>
         <Form.Control

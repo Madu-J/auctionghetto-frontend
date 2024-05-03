@@ -1,5 +1,4 @@
-import Image from 'react-bootstrap/Image';
-import Alert from 'react-bootstrap/Alert';
+import { Image, Alert } from 'react-bootstrap';
 import styles from '../../styles/AuctionCreateEditForm.module.css';
 import appStyles from "../../App.module.css";
 import btnStyles from '../../styles/Button.module.css';
@@ -8,7 +7,7 @@ import { axiosReq } from '../../api/axiosDefaults';
 import {
   useHistory,
   useParams,
-} from "react-router-dom/cjs/react-router-dom.min";
+} from "react-router-dom";
 
 // Component for editing an existing auction.
 // Prepopulates the existing data into the form.
@@ -17,7 +16,10 @@ function AuctionEditForm() {
 
   const [auctionData, setAuctionData] = useState({
     title: "",
-    productcategory: "",
+    categories: "",
+    items: "",
+    auto: "",
+    auctionday: "",
     description: "",
     year: "",
     fueltype: "",
@@ -27,7 +29,10 @@ function AuctionEditForm() {
 
   const {
     title,
-    productcategory,
+    categories,
+    items,
+    auto,
+    auctionday,
     description,
     year,
     fueltype,
@@ -45,11 +50,11 @@ function AuctionEditForm() {
         const { data } = await axiosReq.get(`/auctions/${id}/`);
         const {
             title,
-            productcategory,
-            item_products,
-            autocategory,
+            categories,
+            items,
+            auto,
+            auctionday,
             description,
-            auctionstartday,
             year,
             fueltype,
             price,
@@ -63,8 +68,8 @@ function AuctionEditForm() {
               categories,
               items,
               auto,
-              description,
               auctionday,
+              description,
               year,
               fueltype,
               price,
@@ -172,19 +177,20 @@ function AuctionEditForm() {
           <option value='table'>Table</option>
           <option value='bicycle'>Bicycle</option>
           <option value='bed'>Bed</option>
-          <option value='pc'>PC</option>
+          <option value='refrigerator'>Refrigerator</option>
+          <option value='pc'>Pc</option>
           <option value='phones'>Phones</option>
           <option value='other'>Other</option> 
         </Form.Control>
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Autocategory</Form.Label>
+        <Form.Label>Auto</Form.Label>
         <Form.Control
           as="select"
           type="text"
           name="auto"
-          value={autocategory}
+          value={auto}
           onChange={handleChange}
         >
           <option value='car'>Car</option>
@@ -198,12 +204,12 @@ function AuctionEditForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>auctionstartday</Form.Label>
+        <Form.Label>auctionday</Form.Label>
         <Form.Control
           as="select"
           type="text"
           name="auctionday"
-          value={auctionstartday}
+          value={auctionday}
           onChange={handleChange}
         >
           <option value='monday'>Monday</option>
@@ -256,12 +262,13 @@ function AuctionEditForm() {
           onChange={handleChange}
         >        
           <option value="petrol">Petrol</option>
-          <option value="diesel">Diesel</option>
           <option value="hybrid">Hybrid</option>
+          <option value="diesel">Diesel</option>
           <option value="electric">Electric</option>
-
+          <option value="other">Other</option>
         </Form.Control>
       </Form.Group>
+
       <Form.Group>
         <Form.Label>Price</Form.Label>
         <Form.Control
@@ -285,7 +292,7 @@ function AuctionEditForm() {
         cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        save
+        bookmark
       </Button>
     </div>
   );
