@@ -154,7 +154,7 @@ function Auction(props) {
           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
-              <i className="fa-solid fa-calendar-days">day</i>
+              <i className="fa-solid fa-calendar-days"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">auctionday</span>

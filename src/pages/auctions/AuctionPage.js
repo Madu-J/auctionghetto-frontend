@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { 
     useParams 
-} from 'react-router-dom/cjs/react-router-dom.min';
+} from 'react-router-dom';
 import { axiosReq } from '../../api/axiosDefaults';
 import PopularAuctioneers from '../auctioneers/PopularAuctioneers';
 import Auction from './Auction';

@@ -19,7 +19,7 @@ const AuctionList = (props) => {
       title,
       categories,
       items,
-      autocategory,
+      auto,
       year,
       fueltype,
       price,
@@ -91,7 +91,7 @@ const AuctionList = (props) => {
                       placement="top"
                       overlay={<Tooltip>Log in to bookmark auction!</Tooltip>}
                     >
-                      <i className="fas fa-heart" />
+                      <i className="fas fa-bookmark" />
                     </OverlayTrigger>
                   )}
   
@@ -120,7 +120,7 @@ const AuctionList = (props) => {
                   </div>
                   <div>
                     <i className="fa-solid fa-car"></i>
-                    {autocategory}
+                    {auto}
                   </div>
                   <div>
                     <i className="fa-solid fa-calendar-days"></i>

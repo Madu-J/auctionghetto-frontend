@@ -60,11 +60,11 @@ function AuctionEditForm() {
         is_owner
           ? setAuctionData({
               title,
-              productcategory,
-              item_products,
-              autocategory,
+              categories,
+              items,
+              auto,
               description,
-              auctionstartday,
+              auctionday,
               year,
               fueltype,
               price,
@@ -101,10 +101,10 @@ function AuctionEditForm() {
     const formData = new FormData();
 
     formData.append("title", title);
-    formData.append("productcategory", productcategory);
-    formData.append("item_products", item_products);
-    formData.append("autocategory", autocategory);
-    formData.append("auctionstartday", auctionstartday);
+    formData.append("categories", categories);
+    formData.append("items", items);
+    formData.append("auto", auto);
+    formData.append("auctionday", auctionday);
     formData.append("description", description);
     formData.append("year", year);
     formData.append("fueltype", fueltype);
@@ -141,11 +141,11 @@ function AuctionEditForm() {
       ))}
 
       <Form.Group>
-        <Form.Label>Productcategory</Form.Label>
+        <Form.Label>Categories</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="productcategory"
+          name="categories"
           value={brand}
           onChange={handleChange}
         >        
@@ -159,12 +159,12 @@ function AuctionEditForm() {
         </Form.Group>
 
         <Form.Group>
-        <Form.Label>Item products</Form.Label>
+        <Form.Label>Items</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="item_products"
-          value={item_products}
+          name="items"
+          value={items}
           onChange={handleChange}
         >
           <option value='furniture'>Furniture</option>
@@ -183,7 +183,7 @@ function AuctionEditForm() {
         <Form.Control
           as="select"
           type="text"
-          name="autocategory"
+          name="auto"
           value={autocategory}
           onChange={handleChange}
         >
@@ -202,7 +202,7 @@ function AuctionEditForm() {
         <Form.Control
           as="select"
           type="text"
-          name="auctionstartday"
+          name="auctionday"
           value={auctionstartday}
           onChange={handleChange}
         >
