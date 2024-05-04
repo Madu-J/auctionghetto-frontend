@@ -98,11 +98,11 @@ function Auction(props) {
           </OverlayTrigger>
         ) : bookmark_id ? (
           <span onClick={handleUnbookmark}>
-            <i className={`fas fa-heart ${styles.Bookmark}`} />
+            <i className={`fas fa-heart ${styles.Heart}`} />
           </span>
         ) : currentUser ? (
           <span onClick={handleBookmark}>
-            <i className={`far fa-bookmark ${styles.BookmarkOutline}`} />
+            <i className={`far fa-bookmark ${styles.HeartOutline}`} />
           </span>
         ) : (
           <OverlayTrigger
@@ -157,7 +157,7 @@ function Auction(props) {
               <i className="fa-solid fa-calendar-day"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">auctionday</span>
+                <span className="d-block text-muted">Auctionday</span>
                 <span className="font-weight-bold">{auctionday}</span>
               </Col>
             </Row>

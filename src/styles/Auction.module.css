@@ -12,11 +12,15 @@
     margin: 0 0;
 }
  
-.Bookmark {
+.Heart {
     color: #f85032;
 }
  
-.Bookmark:hover {
+.Heart:hover {
+    color: #2142b2;
+}
+
+.HeartOutline:hover {
     color: #2142b2;
 }
  

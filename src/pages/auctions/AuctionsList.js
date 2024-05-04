@@ -20,7 +20,7 @@ import PopularAuctioneers from "../auctioneers/PopularAuctioneers";
 // Imports Auction component to genereate list of Auctions on the main page.
 function AuctionsList({ message, filter = "" }) {
   const [auctions, setAuctions] = useState({ results: [] });
-  const [hasLoaded, setHasLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const { pathname } = useLocation();
   const [query, setQuery] = useState("");
   const currentUser = useCurrentUser();
@@ -30,13 +30,13 @@ function AuctionsList({ message, filter = "" }) {
       try {
         const { data } = await axiosReq.get(`/auctions/?${filter}search=${query}`);
         setAuctions(data);
-        setHasLoaded(true);
+        setIsLoaded(true);
       } catch (err) {
         //console.log(err);
       }
     };
 
-    setHasLoaded(false);
+    setIsLoaded(false);
     const timer = setTimeout(() => {
       fetchAuctions();
     }, 1000);
@@ -63,7 +63,7 @@ function AuctionsList({ message, filter = "" }) {
             placeholder="Search for  Auction"
           />
         </Form>
-        {hasLoaded ? (
+        {isLoaded ? (
           <>
             {auctions.results.length ? (
               <InfiniteScroll

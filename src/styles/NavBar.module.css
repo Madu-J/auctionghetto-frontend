@@ -7,12 +7,12 @@
   }
   
   .Active i {
-    color: #800020;
+    color: rgb(148, 203, 236);
   }
   .Slogan {
     display: inline;
     font-size: 0.8rem;
     font-style: italic;
-    color:#fff;
+    color: #fff;
     padding: 0 2px 0 10px;
   }
