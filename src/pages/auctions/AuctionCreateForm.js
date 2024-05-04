@@ -170,7 +170,7 @@ function AuctionCreateForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>auctionday</Form.Label>
+        <Form.Label>Auctionday</Form.Label>
         <Form.Control
           as="select"
           type="text"
@@ -280,7 +280,7 @@ function AuctionCreateForm() {
                       className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
                       htmlFor="image-upload"
                     >
-                      Change the image
+                      Change image
                     </Form.Label>
                   </div>
                 </>

@@ -29,7 +29,6 @@ const AuctioneerEditForm = () => {
   const imageFile = useRef();
 
   const [auctioneerData, setAuctioneerData] = useState({
-    title:"",
     name: "",
     description: "",
     street_address: "",
@@ -41,7 +40,6 @@ const AuctioneerEditForm = () => {
   });
 
   const {
-    title,
     name,
     description,
     street_address,
@@ -60,7 +58,6 @@ const AuctioneerEditForm = () => {
         try {
           const { data } = await axiosReq.get(`/auctioneers/${id}/`);
           const {
-            title,
             name,
             description,
             street_address,
@@ -71,7 +68,6 @@ const AuctioneerEditForm = () => {
             image,
           } = data;
           setAuctioneerData({
-            title,
             name,
             description,
             street_address,
@@ -103,7 +99,6 @@ const AuctioneerEditForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-    formData.append('title', title);
     formData.append('name', name);
     formData.append('description', description);
     formData.append('street_address', street_address);
@@ -264,7 +259,7 @@ const AuctioneerEditForm = () => {
                   className={`${btnStyles.Button} ${btnStyles.Blue} btn my-auto`}
                   htmlFor="image-upload"
                 >
-                  Change the image
+                  Change image
                 </Form.Label>
               </div>
               <Form.File
