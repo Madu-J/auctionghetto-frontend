@@ -81,11 +81,11 @@ const AuctionList = (props) => {
                     </OverlayTrigger>
                   ) : bookmark_id ? (
                     <span onClick={handleUnbookmark}>
-                      <i className={`fas fa-bookmark ${styles.Bookmark}`} />
+                      <i className={`fas fa-bookmark ${styles.Heart}`} />
                     </span>
                   ) : currentUser ? (
                     <span onClick={handleBookmark}>
-                      <i className={`fas fa-bookmark ${styles.BookmarkOutline}`} />
+                      <i className={`fas fa-bookmark ${styles.HeartOutline}`} />
                     </span>
                   ) : (
                     <OverlayTrigger

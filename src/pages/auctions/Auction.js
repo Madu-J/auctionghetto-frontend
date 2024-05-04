@@ -118,40 +118,40 @@ function Auction(props) {
         <Row className="mb-2 text-left no-gutters">
           <Col>
             <Row>
-              <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-shop"></i>
-              </Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Categories</span>
-                <span className="font-weight-bold text-capitalize">
-                  {categories}
-                </span>
-              </Col>
+                <Col className="d-inline-block" xs={3}>
+                  <i className="fa-solid fa-shop"></i>
+                </Col>
+                <Col className="d-inline-block" xs={9}>
+                  <span className="d-block text-muted">Categories</span>
+                  <span className="font-weight-bold text-capitalize">
+                    {categories}
+                  </span>
+                </Col>
             </Row>
-          </Col>
-          <Col>
+        </Col>
+        <Col>
             <Row>
-              <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-vacuum"></i>
-              </Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Items</span>
-                <span className="font-weight-bold">{items}</span>
-              </Col>
+                <Col className="d-inline-block" xs={3}>
+                  <i className="fa-solid fa-vacuum"></i>
+                </Col>
+                <Col className="d-inline-block" xs={9}>
+                  <span className="d-block text-muted">Items</span>
+                  <span className="font-weight-bold">{items}</span>
+                </Col>
             </Row>
-          </Col>
-          <Col>
+        </Col>
+        <Col>
             <Row>
-              <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-truck-monster"></i>
-              </Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">auto</span>
-                <span className="font-weight-bold">{auto}</span>
-              </Col>
+                <Col className="d-inline-block" xs={3}>
+                  <i className="fa-solid fa-truck-monster"></i>
+                </Col>
+                <Col className="d-inline-block" xs={9}>
+                  <span className="d-block text-muted">Auto</span>
+                  <span className="font-weight-bold">{auto}</span>
+                </Col>
             </Row>
-          </Col>
-          <Col>
+        </Col>
+        <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
               <i className="fa-solid fa-calendar-day"></i>
@@ -161,9 +161,8 @@ function Auction(props) {
                 <span className="font-weight-bold">{auctionday}</span>
               </Col>
             </Row>
-          </Col>
-
-          <Col>
+        </Col>
+        <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
                 <i className="fa-solid fa-calendar-days"></i>
@@ -174,12 +173,9 @@ function Auction(props) {
               </Col>
             </Row>
           </Col>
-        </Row>
-        <Row className="mb-5 text-left no-gutters">
-          <Col>
-
-          </Col>
-          <Col>
+      </Row>
+      <Row className="mb-5 text-left no-gutters">
+        <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
                 <i className="fa-solid fa-gas-pump"></i>
@@ -192,7 +188,7 @@ function Auction(props) {
               </Col>
             </Row>
           </Col>
-          <Col>
+           <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
                 <i className="fa-solid fa-money-bill-1-wave"></i>
@@ -203,7 +199,7 @@ function Auction(props) {
               </Col>
             </Row>
           </Col>
-        </Row>
+      </Row>
 
         {title && <Card.Title className="text-left">{title}</Card.Title>}
         {description && (
