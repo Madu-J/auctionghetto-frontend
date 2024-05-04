@@ -19,10 +19,15 @@ import PopularAuctioneers from "../auctioneers/PopularAuctioneers";
 
 // Imports Auction component to genereate list of Auctions on the main page.
 function AuctionsList({ message, filter = "" }) {
+
   const [auctions, setAuctions] = useState({ results: [] });
+
   const [isLoaded, setIsLoaded] = useState(false);
+
   const { pathname } = useLocation();
+
   const [query, setQuery] = useState("");
+
   const currentUser = useCurrentUser();
 
   useEffect(() => {
