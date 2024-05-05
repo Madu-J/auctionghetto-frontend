@@ -1,5 +1,5 @@
 .App {
-    font-family: "Lato", sans-serif;
+    font-family:Helvetica, sans-serif;
     background-color: #0707;
     min-height: 100vh;
 }
@@ -19,7 +19,7 @@
     object-fit: contain;
     height: 100%;
     width: 100%;
-    background-color: #800020;
+    background-color: #94cbec;
     padding: 10%;
 }
  
@@ -75,7 +75,18 @@ figure {
     text-align: center;
     display: inline-block;
 }
-  
+
+body{
+    padding-top: 100px;
+}
+
+/* fix padding under menu after resize */
+@media screen and (min-width: 992px) {
+    body {
+        padding-top: 60px; 
+    }
+}
+
 /* scrollbar */
 *::-webkit-scrollbar {
     width: 5px;
@@ -88,14 +99,4 @@ figure {
 }
 *::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-  
-@media only screen and (max-width: 500px) {
-    body {
-      font-size: 0.75rem;
-    }
-    i {
-      font-size: 0.65rem;
-      padding: 3px;
-    }
 }

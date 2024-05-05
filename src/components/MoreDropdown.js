@@ -17,14 +17,14 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
     />
 ));
   
-export const MoreDropdown = ({ handleEdit, handleDelete }) => {
+export const MoreDropdown = ({handleEdit, handleDelete}) => {
     return (
       <Dropdown className="ml-auto" drop="left">
         <Dropdown.Toggle as={ThreeDots} />
   
         <Dropdown.Menu
           className="text-center"
-          popperConfig={{ strategy: "fixed" }}
+          popperConfig={{strategy: "fixed"}}
         >
           <Dropdown.Item
             className={styles.DropdownItem}
