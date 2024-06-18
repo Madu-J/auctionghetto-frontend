@@ -3,6 +3,7 @@ import styles from "../styles/Avatar.module.css";
 
 //component for the Avatar image used throughout the site
 const Avatar = ({ src, height = 45, text }) => {
+  console.log(src)
   return (
     <span>
       <img
