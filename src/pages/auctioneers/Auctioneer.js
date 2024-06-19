@@ -11,7 +11,7 @@ import Avatar from '../../components/Avatar';
 const Auctioneer = (props) => {
   const { auctioneer, mobile, imageSize = 45 } = props;
   const { id, following_id, image, owner } = auctioneer;
-  console.log(auctioneer)
+  // console.log(auctioneer)
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;

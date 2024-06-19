@@ -108,7 +108,7 @@ const AuctioneerEditForm = () => {
     formData.append('phone', phone);
 
     if (imageFile?.current?.files[0]) {
-      formData.append('image', imageFile?.current?.files[0]);
+      formData.append('auctioneer_image', imageFile?.current?.files[0]);
     }
 
     try {
