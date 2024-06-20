@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "../styles/Avatar.module.css";
 
+
 //component for the Avatar image used throughout the site
-const Avatar = ({ src, height = 45, text }) => {
+const Avatar = ({ src, height = 40, text }) => {
   return (
     <span>
       <img

@@ -35,7 +35,7 @@ const NavBar = () => {
           activeClassName={styles.Active}
           to="/auctions/create"
         >
-          <i className="fas fa-shop"></i> Auction Sales
+          <i className="fas fa-plus"></i> Add items
         </NavLink>
       );
       const loggedInIcons = (
@@ -52,7 +52,7 @@ const NavBar = () => {
             activeClassName={styles.Active}
             to="/bookmark"
           >
-            <i className="fas fa-bookmark"></i>Bookmark
+            <i className="fas fa-heart"></i>Bookmark
           </NavLink>
           <NavLink 
           className={styles.NavLink} 
@@ -63,10 +63,7 @@ const NavBar = () => {
             className={styles.NavLink}
             to={`/auctioneers/${currentUser?.auctioneer_id}`}
           >
-            <Avatar 
-            src={currentUser?.auctioneer_image} text="Auctioneer" 
-            height={40}
-          />
+            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={40}/>
           </NavLink>
         </>
       );
