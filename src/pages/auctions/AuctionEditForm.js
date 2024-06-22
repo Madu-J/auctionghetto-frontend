@@ -86,7 +86,7 @@ function AuctionEditForm() {
 
   const handleChange = (event) => {
     setAuctionData({
-      ...autotraderData,
+      ...auctionData,
       [event.target.name]: event.target.value,
     });
   };
@@ -151,7 +151,7 @@ function AuctionEditForm() {
           as="select"
           type="text"
           name="categories"
-          value={brand}
+          value={categories}
           onChange={handleChange}
         >        
         <option value="home">Home</option>

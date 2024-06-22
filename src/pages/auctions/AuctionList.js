@@ -77,22 +77,22 @@ const AuctionList = (props) => {
                       placement="top"
                       overlay={<Tooltip>You cannot bookmark your own listed item!</Tooltip>}
                     >
-                      <i className="fas fa-bookmark" />
+                      <i className="fas fa-heart" />
                     </OverlayTrigger>
                   ) : bookmark_id ? (
                     <span onClick={handleUnbookmark}>
-                      <i className={`fas fa-bookmark ${styles.Heart}`} />
+                      <i className={`fas fa-heart ${styles.Heart}`} />
                     </span>
                   ) : currentUser ? (
                     <span onClick={handleBookmark}>
-                      <i className={`fas fa-bookmark ${styles.HeartOutline}`} />
+                      <i className={`fas fa-heart ${styles.HeartOutline}`} />
                     </span>
                   ) : (
                     <OverlayTrigger
                       placement="top"
                       overlay={<Tooltip>Log in to bookmark auction!</Tooltip>}
                     >
-                      <i className="fas fa-bookmark" />
+                      <i className="fas fa-heart" />
                     </OverlayTrigger>
                   )}
   
@@ -116,7 +116,7 @@ const AuctionList = (props) => {
                     {categories}
                   </div>
                   <div>
-                    <i className="fa-solid fa-vacuum"></i>
+                    <i className="fa-solid fa-bicycle"></i>
                     {items}
                   </div>
                   <div>

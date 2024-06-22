@@ -10,7 +10,7 @@ import Asset from "../../components/Asset";
 import { useRef, useState } from "react";
 import {
    useHistory 
-  } from "react-router-dom/cjs/react-router-dom.min";
+  } from 'react-router-dom';
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
 
