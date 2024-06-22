@@ -94,7 +94,7 @@ function Auction(props) {
             placement="top"
             overlay={<Tooltip>User cannot bookmark own listed item!</Tooltip>}
           >
-            <i className="far fa-bookmark" />
+            <i className="far fa-heart" />
           </OverlayTrigger>
         ) : bookmark_id ? (
           <span onClick={handleUnbookmark}>
@@ -102,14 +102,14 @@ function Auction(props) {
           </span>
         ) : currentUser ? (
           <span onClick={handleBookmark}>
-            <i className={`far fa-bookmark ${styles.HeartOutline}`} />
+            <i className={`far fa-heart ${styles.HeartOutline}`} />
           </span>
         ) : (
           <OverlayTrigger
             placement="top"
             overlay={<Tooltip>Log in to bookmark an auction!</Tooltip>}
           >
-            <i className="far fa-bookmark" />
+            <i className="far fa-heart" />
           </OverlayTrigger>
         )}
       </div>
@@ -177,9 +177,7 @@ function Auction(props) {
       <Row className="mb-5 text-left no-gutters">
         <Col>
             <Row>
-              <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-gas-pump"></i>
-              </Col>
+              <Col className="d-inline-block" xs={3}></Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">Fueltype</span>
                 <span className="font-weight-bold text-capitalize">
@@ -190,9 +188,7 @@ function Auction(props) {
           </Col>
            <Col>
             <Row>
-              <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-money-bill-1-wave"></i>
-              </Col>
+              <Col className="d-inline-block" xs={3}></Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">Price</span>
                 <span className="font-weight-bold">{price}€</span>
