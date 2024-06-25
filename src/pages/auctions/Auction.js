@@ -1,4 +1,4 @@
-import React from "react";
+//import React, { useState } from "react";
 import {
    Row, Col, Media, Tooltip, 
    Card, OverlayTrigger 
@@ -36,10 +36,12 @@ function Auction(props) {
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
   const history = useHistory();
+  //const [Bookmarked, setBookmarked] = useState();
 
-  const handleBookmark = async () => {
+   // Bookmark your favorite auction.
+   const handleBookmark = async () => {
     try {
-      const { data } = await axiosRes.post("/bookmark/", { auction: id });
+      const { data } = await axiosRes.post("/bookmarked/", { auction: id });
       setAuctions((setAuctions) => ({
         ...setAuctions,
         results: setAuctions.results.map((auction) => {
@@ -51,8 +53,8 @@ function Auction(props) {
     }
   };
 
-   // Delete auction posting from bookmarked auctions
-  const handleUnbookmark = async () => {
+   // Delete auction from bookmarked auctions
+  const handleBookmarked = async () => {
     try {
       await axiosRes.delete(`/bookmarked/${bookmark_id}/`);
       setAuctions((setAuctions) => ({
@@ -65,6 +67,7 @@ function Auction(props) {
       //console.log(err);
     }
   };
+
 
   const handleEdit = () => {
     history.push(`/auctions/${id}/edit`);
@@ -97,7 +100,7 @@ function Auction(props) {
             <i className="far fa-heart" />
           </OverlayTrigger>
         ) : bookmark_id ? (
-          <span onClick={handleUnbookmark}>
+          <span onClick={handleBookmarked}>
             <i className={`fas fa-heart ${styles.Heart}`} />
           </span>
         ) : currentUser ? (
@@ -119,7 +122,7 @@ function Auction(props) {
           <Col>
             <Row>
                 <Col className="d-inline-block" xs={3}>
-                  <i className="fa-solid fa-shop"></i>
+                <i className="fa-solid fa-shop"></i>
                 </Col>
                 <Col className="d-inline-block" xs={9}>
                   <span className="d-block text-muted">Categories</span>
@@ -162,20 +165,22 @@ function Auction(props) {
               </Col>
             </Row>
         </Col>
-        <Col>
+      </Row>
+      <Row className="mb-5 text-left no-gutters">
+      <Col>
             <Row>
               <Col className="d-inline-block" xs={3}>
                 <i className="fa-solid fa-calendar-days"></i>
               </Col>
               <Col className="d-inline-block" xs={9}>
                 <span className="d-block text-muted">Year</span>
-                <span className="font-weight-bold">{year}</span>
+                <span className="font-weight-bold text-capitalize">
+                  {year}
+                  </span>
               </Col>
             </Row>
           </Col>
-      </Row>
-      <Row className="mb-5 text-left no-gutters">
-        <Col>
+          <Col>
             <Row>
               <Col className="d-inline-block" xs={3}></Col>
               <Col className="d-inline-block" xs={9}>
