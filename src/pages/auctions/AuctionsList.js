@@ -22,7 +22,7 @@ function AuctionsList({ message, filter = "" }) {
 
   const [auctions, setAuctions] = useState({ results: [] });
 
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [hasLoaded, setHasLoaded] = useState(false);
 
   const { pathname } = useLocation();
 
@@ -35,13 +35,13 @@ function AuctionsList({ message, filter = "" }) {
       try {
         const { data } = await axiosReq.get(`/auctions/?${filter}search=${query}`);
         setAuctions(data);
-        setIsLoaded(true);
+        setHasLoaded(true);
       } catch (err) {
         //console.log(err);
       }
     };
 
-    setIsLoaded(false);
+    setHasLoaded(false);
     const timer = setTimeout(() => {
       fetchAuctions();
     }, 1000);
@@ -68,7 +68,7 @@ function AuctionsList({ message, filter = "" }) {
             placeholder="Search for  Auction"
           />
         </Form>
-        {isLoaded ? (
+        {hasLoaded ? (
           <>
             {auctions.results.length ? (
               <InfiniteScroll

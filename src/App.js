@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="styles.App">
       <NavBar />
-      <Container className={styles.App}>
+      <Container className={styles.Main}>
         <Switch>
         <Route 
           exact 
