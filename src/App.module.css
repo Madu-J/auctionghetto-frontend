@@ -76,10 +76,6 @@ figure {
     display: inline-block;
 }
 
-body{
-    padding-top: 100px;
-}
-
 /* scrollbar */
 *::-webkit-scrollbar {
     width: 5px;
