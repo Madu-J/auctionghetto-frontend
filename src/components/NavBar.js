@@ -63,7 +63,8 @@ const NavBar = () => {
             className={styles.NavLink}
             to={`/auctioneers/${currentUser?.auctioneer_id}`}
           >
-            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={40}/>
+            <Avatar src={currentUser?.auctioneer_image } text="Auctioneer" height={40}/>
+            <i className="fas fa-user"></i>
           </NavLink>
         </>
       );
