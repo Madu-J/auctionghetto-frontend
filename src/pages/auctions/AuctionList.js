@@ -18,11 +18,9 @@ const AuctionList = (props) => {
       bookmark_id,
       title,
       categories,
-      items,
-      auto,
+      products,
       auctionday,
       year,
-      fueltype,
       price,
       image,
       updated_at,
@@ -46,7 +44,7 @@ const AuctionList = (props) => {
       }
     };
   
-    const handleIsBookmarked = async () => {
+    const handleIsBookmark = async () => {
       try {
         await axiosRes.delete(`/bookmarked/${bookmark_id}/`);
         setAuctions((setAuctions) => ({
@@ -80,7 +78,7 @@ const AuctionList = (props) => {
                       <i className="fas fa-heart" />
                     </OverlayTrigger>
                   ) : bookmark_id ? (
-                    <span onClick={handleIsBookmarked}>
+                    <span onClick={handleIsBookmark}>
                       <i className={`fas fa-heart ${styles.Heart}`} />
                     </span>
                   ) : currentUser ? (
@@ -117,23 +115,15 @@ const AuctionList = (props) => {
                   </div>
                   <div>
                     <i className="fa-solid fa-bicycle"></i>
-                    {items}
-                  </div>
-                  <div>
-                    <i className="fa-solid fa-truck-mosnter"></i>
-                    {auto}
+                    {products}
                   </div>
                   <div>
                     <i className="fa-solid fa-calendar-day"></i>
                     {auctionday}
                   </div>
-                  <div>
+                  <div className="text-capitalize">
                     <i className="fa-solid fa-calendar-days"></i>
                     {year}
-                  </div>
-                  <div className="text-capitalize">
-                    <i className="fa-solid fa-gas-pump"></i>
-                    {fueltype}
                   </div>
                 </Col>
               </Row>

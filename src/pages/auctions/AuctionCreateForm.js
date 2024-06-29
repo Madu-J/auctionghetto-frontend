@@ -24,13 +24,11 @@ function AuctionCreateForm() {
  
   const [auctionData, setAuctionData] = useState({
     title: "",
-    categories: "home",
-    items: 'furniture',
-    auto: 'car',
+    categories: "vehicle",
+    products: 'phones',
     auctionday: 'monday',
     description: "",
     year: "",
-    fueltype: "petrol",
     price: "",
     image: "",
   });
@@ -38,12 +36,10 @@ function AuctionCreateForm() {
   const {
     title,
     categories,
-    items,
-    auto,
+    products,
     auctionday,
     description,
     year,
-    fueltype,
     price,
     image,
   } = auctionData;
@@ -74,12 +70,10 @@ function AuctionCreateForm() {
  
     formData.append("title", title);
     formData.append("categories", categories);
-    formData.append("items", items);
-    formData.append("auto", auto);
+    formData.append("products", products);
     formData.append("auctionday", auctionday);
     formData.append("description", description);
     formData.append("year", year);
-    formData.append("fueltype", fueltype);
     formData.append("price", price);
     formData.append("image", imageInput.current.files[0]);
  
@@ -126,16 +120,19 @@ function AuctionCreateForm() {
           <option value="vehicle">Vehicle</option>
           <option value="industry">Industry</option>
           <option value="agriculture">Agriculture</option>
+          <option value="automobile">Automobile</option>
+          <option value="sports">Sports</option>
+          <option value="electronics">Electronics</option>
         </Form.Control>
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Items</Form.Label>
+        <Form.Label>Products</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="items"
-          value={items}
+          name="products"
+          value={products}
           onChange={handleChange}
         >
           <option value='furniture'>Furniture</option>
@@ -146,26 +143,13 @@ function AuctionCreateForm() {
           <option value='refrigerator'>Refrigerator</option>
           <option value='pc'>Pc</option>
           <option value='phones'>Phones</option>
-          <option value='other'>Other</option> 
-        </Form.Control>
-      </Form.Group>
-
-      <Form.Group>
-        <Form.Label>Auto</Form.Label>
-        <Form.Control
-          as="select"
-          type="text"
-          name="auto"
-          value={auto}
-          onChange={handleChange}
-        >
           <option value='car'>Car</option>
           <option value='minibus'>Minibus</option>
           <option value='truck'>Truck</option>
           <option value='bus'>Bus</option>
           <option value='escavator'>Escavator</option>
           <option value='motocycle'>Motocycle</option>
-          <option value='other'>Other</option>
+          <option value='other'>Other</option> 
         </Form.Control>
       </Form.Group>
 
@@ -217,23 +201,6 @@ function AuctionCreateForm() {
           {message}
         </Alert>
       ))}
-
-      <Form.Group>
-        <Form.Label>Fueltype</Form.Label>
-        <Form.Control
-          as="select"
-          type="text"
-          name="fueltype"
-          value={fueltype}
-          onChange={handleChange}
-        >  
-          <option value='petrol'>Petrol</option>
-          <option value='hybrid'>Hybrid</option>
-          <option value='diesel'>Diesel</option>
-          <option value='electric'>Electric</option>
-          <option value='other'>Other</option>
-        </Form.Control>
-      </Form.Group>
       <Form.Group>
         <Form.Label>Price</Form.Label>
         <Form.Control

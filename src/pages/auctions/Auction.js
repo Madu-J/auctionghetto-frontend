@@ -1,4 +1,3 @@
-//import React, { useState } from "react";
 import {
    Row, Col, Media, Tooltip, 
    Card, OverlayTrigger 
@@ -20,12 +19,10 @@ function Auction(props) {
     bookmark_id,
     title,
     categories,
-    items,
-    auto,
+    products,
     auctionday,
     description,
     year,
-    fueltype,
     price,
     image,
     updated_at,
@@ -54,7 +51,7 @@ function Auction(props) {
   };
 
    // Delete auction from bookmarked auctions
-  const handleIsBookmarked = async () => {
+  const handleIsBookmark = async () => {
     try {
       await axiosRes.delete(`/bookmarked/${bookmark_id}/`);
       setAuctions((setAuctions) => ({
@@ -100,7 +97,7 @@ function Auction(props) {
             <i className="far fa-heart" />
           </OverlayTrigger>
         ) : bookmark_id ? (
-          <span onClick={handleIsBookmarked}>
+          <span onClick={handleIsBookmark}>
             <i className={`fas fa-heart ${styles.Heart}`} />
           </span>
         ) : currentUser ? (
@@ -138,19 +135,8 @@ function Auction(props) {
                   <i className="fa-solid fa-bicycle"></i>
                 </Col>
                 <Col className="d-inline-block" xs={9}>
-                  <span className="d-block text-muted">Items</span>
-                  <span className="font-weight-bold">{items}</span>
-                </Col>
-            </Row>
-        </Col>
-        <Col>
-            <Row>
-                <Col className="d-inline-block" xs={3}>
-                  <i className="fa-solid fa-truck-monster"></i>
-                </Col>
-                <Col className="d-inline-block" xs={9}>
-                  <span className="d-block text-muted">Auto</span>
-                  <span className="font-weight-bold">{auto}</span>
+                  <span className="d-block text-muted">Products</span>
+                  <span className="font-weight-bold">{products}</span>
                 </Col>
             </Row>
         </Col>
@@ -179,19 +165,8 @@ function Auction(props) {
                   </span>
               </Col>
             </Row>
-          </Col>
-          <Col>
-            <Row>
-              <Col className="d-inline-block" xs={3}></Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Fueltype</span>
-                <span className="font-weight-bold text-capitalize">
-                  {fueltype}
-                </span>
-              </Col>
-            </Row>
-          </Col>
-           <Col>
+      </Col>
+      <Col>
             <Row>
               <Col className="d-inline-block" xs={3}></Col>
               <Col className="d-inline-block" xs={9}>

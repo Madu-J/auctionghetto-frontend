@@ -17,12 +17,10 @@ function AuctionEditForm() {
   const [auctionData, setAuctionData] = useState({
     title: "",
     categories: "",
-    items: "",
-    auto: "",
+    products: "",
     auctionday: "",
     description: "",
     year: "",
-    fueltype: "",
     price: "",
     image: "",
   });
@@ -30,12 +28,10 @@ function AuctionEditForm() {
   const {
     title,
     categories,
-    items,
-    auto,
+    products,
     auctionday,
     description,
     year,
-    fueltype,
     price,
     image,
   } = auctionData;
@@ -51,12 +47,10 @@ function AuctionEditForm() {
         const {
             title,
             categories,
-            items,
-            auto,
+            products,
             auctionday,
             description,
             year,
-            fueltype,
             price,
             image,
             is_owner,
@@ -66,12 +60,10 @@ function AuctionEditForm() {
           ? setAuctionData({
               title,
               categories,
-              items,
-              auto,
+              products,
               auctionday,
               description,
               year,
-              fueltype,
               price,
               image,
             })
@@ -107,12 +99,10 @@ function AuctionEditForm() {
 
     formData.append("title", title);
     formData.append("categories", categories);
-    formData.append("items", items);
-    formData.append("auto", auto);
+    formData.append("products", products);
     formData.append("auctionday", auctionday);
     formData.append("description", description);
     formData.append("year", year);
-    formData.append("fueltype", fueltype);
     formData.append("price", price);
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
@@ -160,16 +150,19 @@ function AuctionEditForm() {
         <option value="vehicle">Vehicle</option>
         <option value="industry">Industry</option>
         <option value="agriculture">Agriculture</option>
+        <option value="automobile">Automobile</option>
+        <option value="sports">Sports</option>
+        <option value="electronics">Electronics</option>
         </Form.Control>
         </Form.Group>
 
         <Form.Group>
-        <Form.Label>Items</Form.Label>
+        <Form.Label>Products</Form.Label>
         <Form.Control
           as="select"
           type="text"
-          name="items"
-          value={items}
+          name="products"
+          value={products}
           onChange={handleChange}
         >
           <option value='furniture'>Furniture</option>
@@ -180,19 +173,6 @@ function AuctionEditForm() {
           <option value='refrigerator'>Refrigerator</option>
           <option value='pc'>Pc</option>
           <option value='phones'>Phones</option>
-          <option value='other'>Other</option> 
-        </Form.Control>
-      </Form.Group>
-
-      <Form.Group>
-        <Form.Label>Auto</Form.Label>
-        <Form.Control
-          as="select"
-          type="text"
-          name="auto"
-          value={auto}
-          onChange={handleChange}
-        >
           <option value='car'>Car</option>
           <option value='minibus'>Minibus</option>
           <option value='truck'>Truck</option>
@@ -251,23 +231,6 @@ function AuctionEditForm() {
           {message}
         </Alert>
       ))}
-
-      <Form.Group>
-        <Form.Label>Fueltype</Form.Label>
-        <Form.Control
-          as="select"
-          type="text"
-          name="fueltype"
-          value={fueltype}
-          onChange={handleChange}
-        >        
-          <option value="petrol">Petrol</option>
-          <option value="hybrid">Hybrid</option>
-          <option value="diesel">Diesel</option>
-          <option value="electric">Electric</option>
-          <option value="other">Other</option>
-        </Form.Control>
-      </Form.Group>
 
       <Form.Group>
         <Form.Label>Price</Form.Label>
