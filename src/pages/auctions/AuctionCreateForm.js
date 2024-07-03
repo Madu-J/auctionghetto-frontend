@@ -24,7 +24,7 @@ function AuctionCreateForm() {
  
   const [auctionData, setAuctionData] = useState({
     title: "",
-    categories: "vehicle",
+    categories: "home",
     products: 'phones',
     auctionday: 'monday',
     description: "",

@@ -1,8 +1,10 @@
+import React from "react";
 import {
-   Row, Col, Media, Tooltip, 
-   Card, OverlayTrigger 
-  } from 'react-bootstrap';
+  Row, Col, Media, Tooltip, 
+  Card, OverlayTrigger 
+ } from 'react-bootstrap';
 import { Link, useHistory  } from 'react-router-dom';
+
 import { axiosRes } from "../../api/axiosDefaults";
 import Avatar from "../../components/Avatar";
 import { MoreDropdown } from "../../components/MoreDropdown";
@@ -185,7 +187,7 @@ function Auction(props) {
         <Media className="align-items-center justify-content-around">
           <span>Sold by:</span>
           <Link to={`/auctioneers/${auctioneer_id}`}>
-            <Avatar src={auctioneer_image} height={55} />
+            <Avatar src={auctioneer_image} height={45} />
             {owner}
           </Link>
           <div className="d-flex align-items-center">

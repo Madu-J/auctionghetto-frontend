@@ -29,13 +29,13 @@ const NavBar = () => {
       }
     };
   
-    const auctionSaleIcon = (
+    const addItemsIcon = (
         <NavLink
           className={styles.NavLink}
           activeClassName={styles.Active}
           to="/auctions/create"
         >
-          <i className="fas fa-plus"></i> Add items
+          <i className="fas fa-plus"></i> Add Items
         </NavLink>
       );
       const loggedInIcons = (
@@ -52,7 +52,7 @@ const NavBar = () => {
             activeClassName={styles.Active}
             to="/bookmark"
           >
-            <i className="fas fa-heart"></i>Bookmark
+            <i className="fas fa-bookmark"></i>Bookmark
           </NavLink>
           <NavLink 
           className={styles.NavLink} 
@@ -103,7 +103,7 @@ const NavBar = () => {
             </div>
           </Navbar.Brand>
         </NavLink>
-        {currentUser && auctionSaleIcon }
+        {currentUser && addItemsIcon }
         <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
