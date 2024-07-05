@@ -63,7 +63,7 @@ const NavBar = () => {
             className={styles.NavLink}
             to={`/auctioneers/${currentUser?.auctioneer_id}`}
           >
-            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={40}/>
+            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={20}/>
             <i className="fas fa-user"></i>
           </NavLink>
         </>
@@ -97,7 +97,7 @@ const NavBar = () => {
     <Container>
         <NavLink to="/">
           <Navbar.Brand className="mr-0">
-            <img src={logo} alt="logo" height="45" />
+            <img src={logo} alt="logo" height="35" />
             <div className={styles.Slogan}>
             <span>Welcome to Auctionghetto</span>
             </div>
