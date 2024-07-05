@@ -114,7 +114,7 @@ const AuctionList = (props) => {
                     {categories}
                   </div>
                   <div>
-                    <i className="fa-solid fa-bicycle"></i>
+                    <i className="fa-solid fa-cart-flatbed"></i>
                     {products}
                   </div>
                   <div>
