@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { axiosReq, axiosRes } from "../api/axiosDefaults";
 import { useCurrentUser } from "./CurrentUserContext";
-import { followStig, unfollowStig } from "../utils/utils";
+import { followHelper, unfollowHelper } from "../utils/utils";
 
 export const AuctioneerDataContext = createContext();
 export const SetAuctioneerDataContext = createContext();
@@ -27,13 +27,13 @@ export const AuctioneerDataProvider = ({ children }) => {
         ...prevState,
         pageAuctioneer: {
           results: prevState.pageAuctioneer.results.map((auctioneer) =>
-            followStig(auctioneer, clickedAuctioneer, data.id)
+            followHelper(auctioneer, clickedAuctioneer, data.id)
           ),
         },
         popularActioneers: {
           ...prevState.popularAuctioneers,
           results: prevState.popularAuctioneers.results.map((auctioneer) =>
-            followStig(auctioneer, clickedAuctioneer, data.id)
+            followHelper(auctioneer, clickedAuctioneer, data.id)
           ),
         },
       }));
@@ -50,13 +50,13 @@ export const AuctioneerDataProvider = ({ children }) => {
         ...prevState,
         pageAuctioneer: {
           results: prevState.pageAuctioneer.results.map((auctioneer) =>
-            unfollowStig(auctioneer, clickedAuctioneer)
+            unfollowHelper(auctioneer, clickedAuctioneer)
           ),
         },
         popularAuctioneers: {
           ...prevState.popularAuctioneers,
           results: prevState.popularAuctioneers.results.map((auctioneer) =>
-            unfollowStig(auctioneer, clickedAuctioneer)
+            unfollowHelper(auctioneer, clickedAuctioneer)
           ),
         },
       }));
