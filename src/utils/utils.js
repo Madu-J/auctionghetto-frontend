@@ -16,7 +16,7 @@ export const fetchMoreData = async (resource, setResource) => {
   } catch (err) {}
 };
 
-export const followStig = (auctioneer, clickedAuctioneer, following_id) => {
+export const followHelper = (auctioneer, clickedAuctioneer, following_id) => {
   return auctioneer.id === clickedAuctioneer.id
     ? // This is the auctioneer being clicked on,
       // its followers count will update and set its following id
@@ -34,7 +34,7 @@ export const followStig = (auctioneer, clickedAuctioneer, following_id) => {
       auctioneer;
 };
 
-export const unfollowStig = (auctioneer, clickedAuctioneer) => {
+export const unfollowHelper = (auctioneer, clickedAuctioneer) => {
   return auctioneer.id === clickedAuctioneer.id
     ? // This is the profile I clicked on,
       // update its followers count and set its following id
