@@ -53,7 +53,7 @@ function Auction(props) {
   };
 
    // Delete auction from bookmarked auctions
-  const handleIsBookmark = async () => {
+  const handleOnBookmark = async () => {
     try {
       await axiosRes.delete(`/bookmarked/${bookmark_id}/`);
       setAuctions((setAuctions) => ({
@@ -99,7 +99,7 @@ function Auction(props) {
             <i className="far fa-heart" />
           </OverlayTrigger>
         ) : bookmark_id ? (
-          <span onClick={handleIsBookmark}>
+          <span onClick={handleOnBookmark}>
             <i className={`fas fa-heart ${styles.Heart}`} />
           </span>
         ) : currentUser ? (
