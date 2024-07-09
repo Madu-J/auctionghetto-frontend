@@ -45,11 +45,11 @@ function App() {
         />
         <Route 
           exact 
-          path="/bookmarked" 
+          path="/bookmarks" 
           render={() => (
             <AuctionsList
                 message="No results found, adjust the search"
-                filter={`bookmarked__owner__auctioneer=${auctioneer_id}&ordering=-bookmarked__created_at&`}
+                filter={`bookmarks__owner__auctioneer=${auctioneer_id}&ordering=-bookmarks__created_at&`}
               />
           )}
         />

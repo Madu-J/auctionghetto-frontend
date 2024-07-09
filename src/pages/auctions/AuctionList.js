@@ -32,7 +32,7 @@ const AuctionList = (props) => {
   
     const handleBookmark = async () => {
       try {
-        const { data } = await axiosRes.post("/bookmarked/", { auction: id });
+        const { data } = await axiosRes.post("/bookmarks/", { auction: id });
         setAuctions((setAuctions) => ({
           ...setAuctions,
           results: setAuctions.results.map((auction) => {
@@ -46,7 +46,7 @@ const AuctionList = (props) => {
   
     const handleOnBookmark = async () => {
       try {
-        await axiosRes.delete(`/bookmarked/${bookmark_id}/`);
+        await axiosRes.delete(`/bookmarks/${bookmark_id}/`);
         setAuctions((setAuctions) => ({
           ...setAuctions,
           results: setAuctions.results.map((auction) => {
@@ -114,7 +114,7 @@ const AuctionList = (props) => {
                     {categories}
                   </div>
                   <div>
-                    <i className="fa-solid fa-bicycle"></i>
+                    <i className="fa-solid fa-cart-flatbed"></i>
                     {products}
                   </div>
                   <div>

@@ -50,9 +50,9 @@ const NavBar = () => {
           <NavLink
             className={styles.NavLink}
             activeClassName={styles.Active}
-            to="/bookmark"
+            to="/bookmarks"
           >
-            <i className="fas fa-bookmark"></i>Bookmark
+            <i className="fas fa-bookmark"></i>Bookmarks
           </NavLink>
           <NavLink 
           className={styles.NavLink} 
