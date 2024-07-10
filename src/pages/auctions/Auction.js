@@ -35,7 +35,6 @@ function Auction(props) {
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
   const history = useHistory();
-  //const [IsBookmarked, setIsBookmarked] = useState();
 
    // Bookmark your favorite auction.
    const handleBookmark = async () => {
