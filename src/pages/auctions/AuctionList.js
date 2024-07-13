@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-    Row, Col,  OverlayTrigger, Card, Tooltip, 
-    Form
+    Row, Col,  OverlayTrigger, Card, Tooltip
 } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
