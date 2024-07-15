@@ -103,7 +103,7 @@ const NavBar = () => {
             </div>
           </Navbar.Brand>
         </NavLink>
-        {currentUser && addItemsIcon }
+        {currentUser && addItemsIcon}
         <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
