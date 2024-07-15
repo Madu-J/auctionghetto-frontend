@@ -30,7 +30,7 @@ const AuctionList = (props) => {
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner;
   
-    const handleClickBookmark = async () => {
+    const handleBookmark = async () => {
       try {
         const { data } = await axiosRes.post("/bookmarks/", { auction: id });
         setAuctions((setAuctions) => ({
@@ -82,7 +82,7 @@ const AuctionList = (props) => {
                       <i className={`fas fa-heart ${styles.Heart}`} />
                     </span>
                   ) : currentUser ? (
-                    <span onClick={handleClickBookmark}>
+                    <span onClick={handleBookmark}>
                       <i className={`fas fa-heart ${styles.HeartOutline}`} />
                     </span>
                   ) : (
