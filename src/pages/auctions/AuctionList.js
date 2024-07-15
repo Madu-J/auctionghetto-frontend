@@ -30,7 +30,7 @@ const AuctionList = (props) => {
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner;
   
-    const handleBookmark = async () => {
+    const handleClickBookmark = async () => {
       try {
         const { data } = await axiosRes.post("/bookmarks/", { auction: id });
         setAuctions((setAuctions) => ({
@@ -44,7 +44,7 @@ const AuctionList = (props) => {
       }
     };
   
-    const handleOnBookmark = async () => {
+    const handleDeleteBookmark = async () => {
       try {
         await axiosRes.delete(`/bookmarks/${bookmark_id}/`);
         setAuctions((setAuctions) => ({
@@ -78,11 +78,11 @@ const AuctionList = (props) => {
                       <i className="fas fa-heart" />
                     </OverlayTrigger>
                   ) : bookmark_id ? (
-                    <span onClick={handleOnBookmark}>
+                    <span onClick={handleDeleteBookmark}>
                       <i className={`fas fa-heart ${styles.Heart}`} />
                     </span>
                   ) : currentUser ? (
-                    <span onClick={handleBookmark}>
+                    <span onClick={handleClickBookmark}>
                       <i className={`fas fa-heart ${styles.HeartOutline}`} />
                     </span>
                   ) : (

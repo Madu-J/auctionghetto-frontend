@@ -37,7 +37,7 @@ function Auction(props) {
   const history = useHistory();
 
    // Bookmark your favorite auction.
-   const handleBookmark = async () => {
+   const handleClickBookmark = async () => {
     try {
       const { data } = await axiosRes.post("/bookmarks/", { auction: id });
       setAuctions((setAuctions) => ({
@@ -52,7 +52,7 @@ function Auction(props) {
   };
 
    // Delete auction from bookmarked auctions
-  const handleOnBookmark = async () => {
+  const handleDeleteBookmark = async () => {
     try {
       await axiosRes.delete(`/bookmarks/${bookmark_id}/`);
       setAuctions((setAuctions) => ({
@@ -98,11 +98,11 @@ function Auction(props) {
             <i className="far fa-heart" />
           </OverlayTrigger>
         ) : bookmark_id ? (
-          <span onClick={handleOnBookmark}>
+          <span onClick={handleDeleteBookmark}>
             <i className={`fas fa-heart ${styles.Heart}`} />
           </span>
         ) : currentUser ? (
-          <span onClick={handleBookmark}>
+          <span onClick={handleClickBookmark}>
             <i className={`far fa-heart ${styles.HeartOutline}`} />
           </span>
         ) : (

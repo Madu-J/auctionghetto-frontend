@@ -37,7 +37,7 @@
  
 a {
     color: #333;
-    transition: color ease-in-out 0.3s;
+    transition: color ease-in-out 0.4s;
 }
  
 nav a {
@@ -50,7 +50,7 @@ a:hover {
  
 a:hover i {
     color: rgb(148, 203, 236);
-    transition: color ease-in-out 0.3s;
+    transition: color ease-in-out 0.4s;
 }
  
 input[type="file"] {
