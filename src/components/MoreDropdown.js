@@ -26,12 +26,12 @@ export const MoreDropdown = ({handleEdit, handleDelete}) => {
           className="text-center"
           popperConfig={{strategy: "fixed"}}
         >
-          <Dropdown.Item
-            className={styles.DropdownItem}
-            aria-label="edit"
-            onClick={handleEdit}
-          >
-            <i className="fas fa-edit" />
+        <Dropdown.Item
+          className={styles.DropdownItem}
+          aria-label="edit"
+          onClick={handleEdit}
+        >
+          <i className="fas fa-edit" />
           </Dropdown.Item>
           <Dropdown.Item
             className={styles.DropdownItem}
@@ -46,28 +46,32 @@ export const MoreDropdown = ({handleEdit, handleDelete}) => {
 };
   
 export function AuctioneerEditDropdown({ id }) {
-    const history = useHistory();
-    return (
-      <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">
-        <Dropdown.Toggle as={ThreeDots} />
-        <Dropdown.Menu>
-          <Dropdown.Item
-            onClick={() => history.push(`/auctioneers/${id}/edit`)}
-            aria-label="edit-auctioneer"
-          >
-            <i className="fas fa-edit" />edit auctioneer</Dropdown.Item>
-          <Dropdown.Item
-            onClick={() => history.push(`/auctioneers/${id}/edit/username`)}
-            aria-label="edit-username"
-          >
-            <i className="far fa-id-card" />change username</Dropdown.Item>
-          <Dropdown.Item
-            onClick={() => history.push(`/auctioneers/${id}/edit/password`)}
-            aria-label="edit-password"
-          >
-            <i className="fas fa-key" />change password</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+  const history = useHistory();
+  return (
+    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">
+      <Dropdown.Toggle as={ThreeDots} 
+      />
+      <Dropdown.Menu>
+        <Dropdown.Item
+          onClick={() => history.push(`/auctioneers/${id}/edit`)}
+          aria-label="edit-auctioneer"
+        >
+          <i className="fas fa-edit" />edit auctioneer
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => history.push(`/auctioneers/${id}/edit/username`)}
+          aria-label="edit-username"
+        >
+          <i className="far fa-id-card" />change username
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => history.push(`/auctioneers/${id}/edit/password`)}
+          aria-label="edit-password"
+        >
+          <i className="fas fa-key" />change password
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
     );
 }
     
