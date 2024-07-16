@@ -143,7 +143,7 @@ const AuctionList = (props) => {
         </Card.Body>
       </Card>
     );
-  };
+};
   
 export default AuctionList;
   

@@ -39,6 +39,6 @@ function AuctionPage() {
           </Col>
         </Row>
       );
-    }
+}
    
-    export default AuctionPage;
+export default AuctionPage;
