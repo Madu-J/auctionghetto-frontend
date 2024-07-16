@@ -168,7 +168,7 @@ const AuctioneerPage = () => {
         </Col>
       </Row>
     );
-  };
+};
   
-  export default AuctioneerPage;
+export default AuctioneerPage;
   

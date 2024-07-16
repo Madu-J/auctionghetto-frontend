@@ -14,32 +14,33 @@ import useClickOutsideToggle from '../hooks/useClickOutsideToggle';
 
 // Navigation component and links
 const NavBar = () => {
-    const currentUser = useCurrentUser();
-    const setCurrentUser = useSetCurrentUser();
-    
-    const { expanded, setExpanded, ref } = useClickOutsideToggle();
+  const currentUser = useCurrentUser();
+  const setCurrentUser = useSetCurrentUser();
 
-    const handleSignOut = async () => {
-      try {
-        await axios.post('dj-rest-auth/logout/');
-        setCurrentUser(null);
-        removeTokenTimestamp();
-      } catch (err) {
-        //console.log(err);
-      }
-    };
+  const { expanded, setExpanded, ref } = useClickOutsideToggle();
+
+  const handleSignOut = async () => {
+    try {
+      await axios.post('dj-rest-auth/logout/');
+      setCurrentUser(null);
+      removeTokenTimestamp();
+    } catch (err) {
+      //console.log(err);
+    }
+  };
   
-    const addItemsIcon = (
-        <NavLink
-          className={styles.NavLink}
-          activeClassName={styles.Active}
-          to="/auctions/create"
-        >
-          <i className="fas fa-plus"></i> Add Items
-        </NavLink>
-      );
-      const loggedInIcons = (
-        <>
+  const addItemsIcon = (
+    <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/auctions/create"
+    >
+        <i className="fas fa-plus"></i> Add Items
+    </NavLink>
+    );
+
+    const loggedInIcons = (
+      <>
           <NavLink
             className={styles.NavLink}
             activeClassName={styles.Active}
@@ -66,45 +67,46 @@ const NavBar = () => {
             <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={20}/>
             <i className="fas fa-user"></i>
           </NavLink>
+      </>
+    );
+
+    const loggedOutIcons = (
+      <>
+        <NavLink
+          className={styles.NavLink}
+          activeClassName={styles.Active}
+          to="/signin"
+        >
+        <i className="fas fa-sign-in-alt"></i>Sign in
+        </NavLink>
+        <NavLink
+          to="/signup"
+          className={styles.NavLink}
+          activeClassName={styles.Active}
+        >
+          <i className="fas fa-user-plus"></i>Sign up
+        </NavLink>
         </>
-      );
-      const loggedOutIcons = (
-        <>
-          <NavLink
-            className={styles.NavLink}
-            activeClassName={styles.Active}
-            to="/signin"
-          >
-            <i className="fas fa-sign-in-alt"></i>Sign in
-          </NavLink>
-          <NavLink
-            to="/signup"
-            className={styles.NavLink}
-            activeClassName={styles.Active}
-          >
-            <i className="fas fa-user-plus"></i>Sign up
-          </NavLink>
-        </>
-      );
+    );
       
-      return (
+    return (
       <Navbar
-      expanded={expanded}
-      className={styles.NavBar}
-      expand="md"
-      fixed="top"
+        expanded={expanded}
+        className={styles.NavBar}
+        expand="md"
+        fixed="top"
       >
-    <Container>
-        <NavLink to="/">
+        <Container>
+          <NavLink to="/">
           <Navbar.Brand className="mr-0">
             <img src={logo} alt="logo" height="35" />
             <div className={styles.Slogan}>
             <span>Welcome to Auctionghetto</span>
             </div>
           </Navbar.Brand>
-        </NavLink>
-        {currentUser && addItemsIcon}
-        <Navbar.Toggle
+          </NavLink>
+          {currentUser && addItemsIcon}
+          <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
           aria-controls="basic-navbar-nav"
@@ -114,9 +116,9 @@ const NavBar = () => {
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
-    </Container>
-    </Navbar>
-  );
+        </Container>
+        </Navbar>
+      );
 };
 
 export default NavBar;
