@@ -57,6 +57,7 @@ const AuctionList = (props) => {
         //console.log(err);
       }
     };
+
     return (
       <Card className={styles.Auction}>
         <Card.Body>
@@ -144,5 +145,5 @@ const AuctionList = (props) => {
     );
   };
   
-  export default AuctionList;
+export default AuctionList;
   
