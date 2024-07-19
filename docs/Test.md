@@ -26,9 +26,9 @@
 
  - | Test & Result |
 
- | 1    | _As a_ user, I should be able to find a column displaying the "Highly Popular" to view them. | Pass  
+ | 1    | _As a_ user, I should be able to find a column displaying the "Highly Popular" to view them. | Pass | 
 
- | 2    | _As a_ user, I should be able to click on a profile (auctioneer) to access more information about the seller.       | Pass   |
+ | 2    | _As a_ user, I should be able to click on a profile(auctioneer) to access more information about the seller. | Pass |
 
  | 3    | _As a_ user, I should be able to edit my profile to update or change my information. | Pass |
 
