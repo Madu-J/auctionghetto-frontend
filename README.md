@@ -61,7 +61,7 @@
  * The user stories are readily available in the GitHub repository, neatly grouped into Epics 
    for enhanced organization. This 
    allows for easy tracking and management of project features. By organizing user stories into Epics, you can get a clear visual representation of the project's progress and understand the high-level goals and themes.
-   ![user-story](./static/Screenshot%202024-05-07_091545.png)
+   ![user-story](./docs/img/auctionghetto.png)
    ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
 
   # Agile methodology
