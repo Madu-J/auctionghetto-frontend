@@ -67,8 +67,23 @@
   # Agile methodology
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
 
+
+## Design & Color
+
+ - Light blue
+ - ![site_color](./docs/img/lightblue.png)
+
+ # Design and structure
+ - !--Sign Up--User profile(Auctioneer)--Search--Auction listings--!
+ - !--Sign In--Feed--Bookmark--Users--Follow--!
+
+ - <p align="center">
+ <img src="./docs/img/Site_structure.png" alt="site_color">
+ </p>
+
 ## Features
-# Navbar & Search
+
+ # Navbar & Search
    The navbar allow users to explore different sections and easily navigate throughout the site pages of the website conveniently. Whether it's accessing specific categories, browsing through listings, or accessing account-related information, the navbar provides a streamlined way to navigate the site.
 
    When a user opens the auction page, they are required to log in first in order to bookmark their choice product and have the option to follow them. User won't be able to bookmark their own listed products. The navbar dynamically updates its links based on the user's state. For instance, if a user is logged in, they will see related to their account, such as auctioneer, follow, unfollow, and bookmark an item.

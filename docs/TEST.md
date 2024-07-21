@@ -117,7 +117,7 @@
 
 ![lighthouse_Mobile](./img/validator/Lighthouse_Mobile.png)
 
-Return to [README.md](/main/README.md)
+Return to [README.md](https://github.com/Madu-J/auctionghetto-frontend?tab=readme-ov-file#auctiongetto--auction-website-for-all-materials)
 
 <br>
 
