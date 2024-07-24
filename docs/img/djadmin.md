@@ -25,24 +25,18 @@
  - Analyzing logs for errors or issues
  - Responding to system alerts
 
- ![admin loginpage]()
+ ![admin_login](/docs/img/loginda.png)
 
  <br>
 
- ![admin2]()
+ ![admin_panel](/docs/img/djangoad.png)
 
  <br>
 
- ![admin_infinite]()
+ ![admin_auction](/docs/img/auctionad.png)
+
  <br>
 
- ![infinite scroll componen]()
+ ![admin_auctineer](/docs/img/auctioneerad.png)
 
  <br> 
-
- ![auction_page]()
- <br>
-
- ![admin_auctioneer]()
-
- <br>

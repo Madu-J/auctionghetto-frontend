@@ -1,5 +1,6 @@
-<h1 style="font-size: 36px; text-align: center;">Auctiongetto | Auction website for all materials!
-</h1>
+<p>
+<h1 style="font-size: 45px; text-align: center; color: blue;">>Auctiongetto | Auction website for all materials!</h1>
+</p>
 
 - ![amiresponsive](./static/Screenshot%202024-05-07_111311.png)
 
