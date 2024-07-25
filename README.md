@@ -145,7 +145,7 @@ Updating Auctionghetto Post: On the Auctions Edit page, users can make changes a
 
 - Uploading New Images: Users may also have the option to upload new images or replace existing auction item to provide a potential buyer with clearer picture of auction item.
 
-- Correcting Information and saving changes: If there were any inaccuracies or mistakes in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
+- Updating data and saving changes: If there is error or mistake in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
 ![Auction Edit Page](./static/)
 
 <br>

@@ -87,40 +87,41 @@
 
 ## Lighthouse test
 
- * The main pages of the deployed site was run through Lighthouse on Google Chrome.
-
- - Main Page Desktop
+ * This site pages underwent through Lighthouse tests on Chrome.
 
 <br>
 
-![lighthouse_Desktop](./img/validator/Lighthouse_desktop.png)
-
-<br>
+- Auctioneer Page
  
-![lighthouse_auctioneer](./img/validator/lighthouse_auctioneer.png)
+- ![lighthouse_Result_AuctioneerMobile](/docs/img/testing/AuctioneerM.png)
 
 <br>
 
-![lighthouse_signin](./img/validator/lighthouse_sign_in.png)
+- ![lighthouse_Result_AuctioneerDesktop](/docs/img/testing/AuctioneerD.png)
 
 <br>
 
-![lighthouse_signup](./img/validator/lighthouse_sign_up.png)
+- Feeds
+
+- ![lighthouse_Result_FeedMobile](/docs/img/testing/lighthouseM.png)
 
 <br>
 
-![lighthouse_uploadimage](./img/validator/lighthouse_imageupload.png)
-
-
-<br>
-
-- Main Page Mobile
+- ![lighthouse_Result_FeedDesktop](/docs/img/testing/lighthouseD.png)
 
 <br>
 
-![lighthouse_Mobile](./img/validator/Lighthouse_Mobile.png)
+- Bookmark page
 
-Return to [README.md](https://github.com/Madu-J/auctionghetto-frontend?tab=readme-ov-file#auctiongetto--auction-website-for-all-materials)
+- ![lighthouse_Result_BookmarkMobile](/docs/img/testing/lighthousebmkM.png)
+
+<br>
+
+- ![lighthouse_Result_BookmarkMobile](/docs/img/testing/lighthousebmkM.png)
+
+<br>
+
+Return to [README.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md)
 
 <br>
 
