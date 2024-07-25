@@ -22,7 +22,7 @@
 - Auctionghetto-live app - Click[here](https://auctionghetto-65bba3a96be0.herokuapp.com/).
  
  * Follow this link to view the Backend repository of Auctionghetto project.
- - Auctionghetto backend - Click[here](/https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
+ - Auctionghetto backend - Click[here](https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
 
 <br>
 
