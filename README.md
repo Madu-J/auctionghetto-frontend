@@ -22,7 +22,7 @@
 - Auctionghetto-live app - Click[here](https://auctionghetto-65bba3a96be0.herokuapp.com/).
  
  * Follow this link to view the Backend repository of Auctionghetto project.
- - Auctionghetto backend - Click[here](/https://github.com/Madu-J/auctionghetto-backend).
+ - Auctionghetto backend - Click[here](/https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
 
 <br>
 
@@ -196,9 +196,7 @@ allows users to make comparing and considering options, making it easier for the
 
 * Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
 
-* Rating System: To add a rating system that enables buyers to rate their experiences with the auctioneers, as providing valuable feedback help build trust within users to the website and new users.
-
-* Gallery: Integrate an image gallery with feature that allows load of more pictures to enable users upload multiple pictures of their products and give a potential buyer clearer picture of item he or she is looking for and make a profitable bargain in the process.
+*Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
 <br>
 
