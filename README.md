@@ -25,6 +25,7 @@
 <br>
 
 ## Table of Contents
+
  - + [User Experience (UX)](#user-experience-ux)
 
   - [User Stories](#user-stories)
@@ -50,9 +51,11 @@
     
 
 # User Experience (UX)
+
 - Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
 ## Following features are available in our site
+
 - In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
 
 - Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
