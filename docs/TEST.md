@@ -77,11 +77,11 @@
 
 <br>
 
- ![validator_html](/docs/img/validatorhtml.png)
+ ![validator_html](/docs/img/testing/validatorhtml.png)
 
 <br>
 
-![validator_css](/docs/img/validatorcss.png)
+![validator_css](/docs/img/testing/validatorcss.png)
 
 <br>
 
