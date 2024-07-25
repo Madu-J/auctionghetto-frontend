@@ -1,12 +1,14 @@
 <p>
-<h1 style="font-size: 45px; text-align: center; color: blue;">>Auctiongetto | Auction website for all materials!</h1>
+<h1 style="font-size: 45px; text-align: center; color: brown;"> Welcome to Auctiongetto website !</h1>
 </p>
 
 - ![amiresponsive](./docs/img/amiresponsive.png)
 
 <br>
+                                           
+##  Auctiongetto | Auction website for all materials!
 
-  Welcome to Auctionghetto, Auctionghetto is an auction platform where potential users sample and sale their products. Our aim is
+  Auctionghetto is an auction platform where potential users sample and sale their products. Our aim is
   to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
   Following features are available in our site
