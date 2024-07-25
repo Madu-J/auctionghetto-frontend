@@ -9,7 +9,7 @@
  - [Code Validation](#code-validation)
    - [JSX](#jsx)
    - [Validator_Testing](#Validator-Testing)
-   - [Lighthouse_Report](#Lighthouse-Report)
+   - [Lighthouse_Test](#Lighthouse-Test)
 
 ## Navigation
 
@@ -72,17 +72,20 @@
 
 ## Validator Testing
 
- - CSS files pass through the Jigsaw validator with no issues found.
- - [W3C Markup Validator](/cs-validator/)
+ - Codde underwent through Jigsaw validation.
+ - [W3C Markup Validator](/validator-css/)
 
 <br>
 
- ![css](./img/validator/_css.png)
- ![html](./img/validator/html.png)
+ ![validator_html](/docs/img/validatorhtml.png)
 
 <br>
 
-## Lighthouse Report
+![validator_css](/docs/img/validatorcss.png)
+
+<br>
+
+## Lighthouse test
 
  * The main pages of the deployed site was run through Lighthouse on Google Chrome.
 

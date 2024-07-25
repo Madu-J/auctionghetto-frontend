@@ -2,9 +2,10 @@
 <h1 style="font-size: 45px; text-align: center; color: blue;">>Auctiongetto | Auction website for all materials!</h1>
 </p>
 
-- ![amiresponsive](./static/Screenshot%202024-05-07_111311.png)
+- ![amiresponsive](./docs/img/amiresponsive.png)
 
 <br>
+
   Welcome to Auctionghetto, Auctionghetto is an auction platform where potential users sample and sale their products. Our aim is
   to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
@@ -13,14 +14,15 @@
   Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
 
   You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
+
 <br>
 
-- ![auctionghetto-live app](https://auctionghetto-65bba3a96be0.herokuapp.com/)
+- Auctionghetto-live app - Click[here](https://auctionghetto-65bba3a96be0.herokuapp.com/).
  
- * Follow the link for Backend & Frontend repository of Auctionghetto project.
- - ![auctionghetto-backend](/https://github.com/Madu-J/auctionghetto-backend)
- - ![auctionghetto-frontend](https://github.com/Madu-J/auctionghetto-frontend)
+ * Follow this link to view the Backend repository of Auctionghetto project.
+ - Auctionghetto backend - Click[here](/https://github.com/Madu-J/auctionghetto-backend).
 
+<br>
 
 ## Table of Contents
  - + [User Experience (UX)](#user-experience-ux)
@@ -29,7 +31,7 @@
 
   - [Design](#design)
 
-+ [Future](#future)
++ [Feature](#feature)
      - [Future Features](#future-features)
      - [Bugs](#bugs)
      - [Fixed Bugs](#fixed-bugs)
@@ -47,44 +49,54 @@
      - [Media](#media)
     
 
-## User Experience (UX)
+# User Experience (UX)
 - Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
-# Following features are available in our site
+## Following features are available in our site
 - In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
 
 - Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
 
 - You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
 
+<br>
 
-## User Stories
+# User Stories
+
  * The user stories are readily available in the GitHub repository, neatly grouped into Epics 
    for enhanced organization. This 
    allows for easy tracking and management of project features. By organizing user stories into Epics, you can get a clear visual representation of the project's progress and understand the high-level goals and themes.
-   ![user-story](./docs/img/auctionghetto.png)
-   ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
+  
+ - ![user-story](media/user_st.png)
 
-  # Agile methodology
+ - To view more User Stories- Click [here](https://github.com/users/Madu-J/projects/14/views/1)
+
+  ## Agile methodology
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
 
+<br>
 
-## Design & Color
+# Design & Color
 
  - Light blue
  - ![site_color](./docs/img/lightblue.png)
 
+<br>
+
  # Design and structure
- - !--Sign Up--User profile(Auctioneer)--Search--Auction listings--!
- - !--Sign In--Feed--Bookmark--Users--Follow--!
 
  - <p align="center">
- <img src="./docs/img/Site_structure.png" alt="site_color">
+ <img src="./docs/img/Site_structure.png" alt="site_structure">
  </p>
 
-## Features
+<br>
 
- # Navbar & Search
+# Features
+
+<br>
+
+ ## Navbar & Search
+
    The navbar allow users to explore different sections and easily navigate throughout the site pages of the website conveniently. Whether it's accessing specific categories, browsing through listings, or accessing account-related information, the navbar provides a streamlined way to navigate the site.
 
    When a user opens the auction page, they are required to log in first in order to bookmark their choice product and have the option to follow them. User won't be able to bookmark their own listed products. The navbar dynamically updates its links based on the user's state. For instance, if a user is logged in, they will see related to their account, such as auctioneer, follow, unfollow, and bookmark an item.
@@ -92,17 +104,22 @@
    Additionally, the navbar incorporates a search bar. This search functionality enables users to search among the various listings available on the site. By simply entering keywords or specific criteria into the search bar, users can quickly find relevant listings, making their browsing experience more efficient and tailored to their preferences.
    ![Navbar](./static/Screenshot%202024-05-07_115940.png)
 
+<br>
 
 ## Auctionghetto Listings
+
 * The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
 
 - Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
 
 - Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
 The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
-![Auctionghetto Listing](./static/)
+![Auctionghetto_Listing](./static/)
+
+<br>
 
 ## Action Details page
+
 * The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
 
 Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
@@ -111,15 +128,18 @@ Provides listing information and key details about a particular auction item and
 The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
 ![Auction Details](./static/Screenshot%202024-05-07_100922.png)
 
+<br>
 
 ## Actions Detail page
 
 * The page includes these features on the Auctions Detail Page, enhancing the user experience 
 by offering comprehensive auctionghetto information and empowering post owners with control over their listings
 ![Auction Detail](./static/Screenshot%202024-05-07_090622.png)
-  
+
+<br>
 
 ## Auctions Edit page
+
 * The Auctions Edit page is a dedicated page that allows users to update an existing 
 posts, which provides a convenient and user-friendly interface for modifying details information associated with a particular listing.
 Updating Auctionghetto Post: On the Auctions Edit page, users can make changes and updates to an existing auction post. This includes modifying various aspects of listing on the website, such as:
@@ -130,6 +150,8 @@ Updating Auctionghetto Post: On the Auctions Edit page, users can make changes a
 - Correcting Information and saving changes: If there were any inaccuracies or mistakes in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
 ![Auction Edit Page](./static/)
 
+<br>
+
 ## Auctioneer page
 
 * The (Auctioneer page) a profile page plays a vital role in providing sellers with a valuable opportunity to showcase their company effectively. It serves as a dedicated platform where sellers can present their company in a comprehensive and compelling manner to users.
@@ -139,6 +161,8 @@ The auctioneer page allows sellers to create a visually appealing and informativ
 The auctioneer page serves as a critical component of the platform, enabling sellers to effectively market their auction products and increased visibility and locations for pick up.
 ![Auctioneer Page](./static/Screenshot%202024-05-07_090707.png)
 
+<br>
+
 ## Edit Actioneer
 
 * Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their existing information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
@@ -146,6 +170,8 @@ The auctioneer page serves as a critical component of the platform, enabling sel
 * This indispensable functionality enables users to preserve their relevancy in the market by 
 consistently presenting the most current and pertinent details about who they are and their products to potential customers.
 ![Edit Auction](./static/)
+
+<br>
 
 ## Feed Page
 
@@ -155,6 +181,8 @@ consistently presenting the most current and pertinent details about who they ar
 updated with the latest inventory from their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
 ![Feed Page](./static/Screenshot%202024-05-07_095856.png)
 
+<br>
+
 ## Bookmark page
 
 * The Bookmark page serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
@@ -162,7 +190,9 @@ updated with the latest inventory from their preferred sellers. This ensures tha
 * This page enables users to effortlessly retrieve or review their preferred selections. Also 
 allows users to make comparing and considering options, making it easier for them to make informed purchasing decisions.
 
-## Future Features
+<br>
+
+# Future Features
 
 * Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
 
@@ -170,7 +200,9 @@ allows users to make comparing and considering options, making it easier for the
 
 * Gallery: Integrate an image gallery with feature that allows load of more pictures to enable users upload multiple pictures of their products and give a potential buyer clearer picture of item he or she is looking for and make a profitable bargain in the process.
 
-## Technologies Used
+<br>
+
+# Technologies Used
 
 * Languages, JavaScript, HTML5 and CSS3
 
@@ -197,20 +229,32 @@ allows users to make comparing and considering options, making it easier for the
 
 * Prettier: An opinionated code formatter that helps maintain consistent code style across the project.
 
-## Testing
-* A separate document for testing can be found here.
+<br>
+
+# Testing
+- Codde underwent Jigsaw validation.
+- [W3C Markup Validator](/validator-css/)
+
+<br>
 
 ## Bugs
+
 * Fixed Bugs
 - Avatar
-- Image
-  I am having issues with images.
+- Image - There was issues with images.
+
+<br>
 
 ## Remaining Bugs
-* 1
--![Images](./static/Screenshot%202024-05-07_121003.png)
 
-## Deployment
+- No new bug found.
+
+<br>
+
+# Deployment
+
+<br>
+
 * To deploy the project, follow these steps:
 
 *  Forking the GitHub Repository
@@ -257,7 +301,10 @@ allows users to make comparing and considering options, making it easier for the
 - Once you have chosen your deployment method and clicked "Deploy Branch", Heroku will build your application.
 - Finally, you should see the "View" button. Click on it to open your deployed application.
 
-## Credit
+<br>
+
+# Credit
+
 * React Bootstrap documentation and examples
 * CodeInstitute tutorial materials and tutors
 * Suzan Dewitz - SuzanDewitz/autotraderss
@@ -266,10 +313,15 @@ allows users to make comparing and considering options, making it easier for the
 * Moments walkthrough project
 * Antonio Rodriquez - mentor
 
-## Images
+<br>
+
+# Images
+
 * pexels.com/photo
 * Flaticom
 * Icon Packs
 * Vecteezy
 * Pingterest
 * The Noun Project
+
+<br>
