@@ -9,10 +9,11 @@ import {
   useParams,
 } from "react-router-dom";
 
+
 // Component for editing an existing auction.
 // Prepopulates the existing data into the form.
 function AuctionEditForm() {
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState ({});
 
   const [auctionData, setAuctionData] = useState({
     title: "",
@@ -36,7 +37,7 @@ function AuctionEditForm() {
     image,
   } = auctionData;
 
-   const imageInput = useRef(null);
+  const imageInput = useRef(null);
   const history = useHistory();
   const { id } = useParams();
 

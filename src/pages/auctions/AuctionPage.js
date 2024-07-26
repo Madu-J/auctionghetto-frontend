@@ -7,11 +7,12 @@ import { axiosReq } from '../../api/axiosDefaults';
 import PopularAuctioneers from '../auctioneers/PopularAuctioneers';
 import Auction from './Auction';
 
+
 // This component creates auctionpage
 // Imports the Auction and Popularauctioneer component
 function AuctionPage() {
     const { id } = useParams();
-    const [auction, setAuction] = useState({ results: [] });
+    const [auction, setAuction] = useState ({ results: [] });
   
     useEffect(() => {
       const handleMount = async () => {
@@ -21,7 +22,7 @@ function AuctionPage() {
             ]);
             setAuction({ results: [auction]});
           } catch (err) {
-          console.log(err);
+         // console.log(err);
         }
         };
        
