@@ -68,11 +68,11 @@
 
 # User Stories
 
- * The user stories are available to view in  GitHub, under Auctionghetto backend repository. Moreso, to view highlight or few specific issues about the frntend. The links below provide you with the user stories.
+ * The user stories are available to view in  Github, under Auctionghetto backend repository. Moreso, to view highlight or few specific issues about the frntend. The links below provide you with the user stories.
    
  - To view User-Story frontend - Click[here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/USERSTORY.md)
 
- - To view full Auctionghetto User Stories- Click[here](https://github.com/users/Madu-J/projects/14/views/1)
+ - To view Auctionghetto Github User Stories- Click[here](https://github.com/users/Madu-J/projects/14/views/1)
 
   ## Agile methodology
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
@@ -214,8 +214,6 @@ allows users to make comparing and considering options, making it easier for the
 
 * react-router-dom - Routing library for the React JavaScript library. Used to display different components based on the URL entered in the browser.
 
-* drawSQL - Tool used to create Database Schema/ERD.
-
 * Git: Version control system used for tracking changes in the source code, with commits and pushes made using the terminal.
 
 * GitHub: Platform used to store the project's code after being pushed from Git.
@@ -223,12 +221,10 @@ allows users to make comparing and considering options, making it easier for the
 * The following modules were installed or enabled in Gitpod to assist with formatting and code linting:
 * ESLint - A code linter that identifies and reports patterns or coding errors in thecodebase.
 
-* Prettier: An opinionated code formatter that helps maintain consistent code style across the project.
-
 <br>
 
 # Testing
-- Codde underwent Jigsaw validation.
+- Code underwent through Jigsaw validation.
 - [W3C Markup Validator](/validator-css/)
 
 <br>
