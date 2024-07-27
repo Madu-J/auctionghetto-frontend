@@ -19,10 +19,11 @@
 
 <br>
 
-- Auctionghetto-live app - Click[here](https://auctionghetto-65bba3a96be0.herokuapp.com/).
+#### Auctionghetto-live app :
+- Click[here](https://auctionghetto-65bba3a96be0.herokuapp.com/)
  
- * Follow this link to view the Backend repository of Auctionghetto project.
- - Auctionghetto backend - Click[here](https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
+ #### Follow the link below to view Backend repository of this project :
+ - [Auctionghetto backend](https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
 
 <br>
 
@@ -72,7 +73,7 @@
    
  - To view User-Story frontend - Click[here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/USERSTORY.md)
 
- - To view Auctionghetto Github User Stories- Click[here](https://github.com/users/Madu-J/projects/14/views/1)
+ - To view Auctionghetto Github User Stories- Click[User-Stories](https://github.com/users/Madu-J/projects/14/views/1)
 
   ## Agile methodology
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
