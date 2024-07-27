@@ -13,19 +13,22 @@
 ## Auction Create Page
 
  * The Auction Crate Page wireframe informs users about the form where they can create new auction listing on Auctionghetto platform. All the fields and sections are displayed for users to input details about the items or products they wish to sell, by entering product's title, make,  year of manufacture, product condition and pricing information.
- - ![Wireframe_page](/docs/img/sketch.md/additems.jpg)
+
+ ![Wireframe_page](/docs/img/sketch.md/additems.jpg)
 
 
 ## Bookmarks Page
 
- * The BookmarksPage wireframe displays a section or page where users can view or manage their favorite products on Auctionghetto  platform. It presents all collection of products which users has bookmarked or saved for later visit. This page simply display list of filtered items in a row.
- - ![Wireframe_page](/docs/img/sketch.md/bookmark.png)
+ * The Bookmarks Page wireframe displays a section or page where users can view or manage their favorite products on Auctionghetto  platform. It presents all collection of products which users has bookmarked or saved for later visit. This page simply display list of filtered items in a row.
+
+ ![Wireframe_page](/docs/img/sketch.md/bookmark.png)
 
 
 ## Auctioneer Page
 
  * The AuctioneerPage wireframe displays user account page on Auctionghetto. It provides user information, like profile picture, username or any detail they wish to add. The auctioneer page may also include sections for managing account settings or view  activities features.
- - ![Wireframe_page](/docs/img/sketch.md/auctioneer.png)
+ 
+ ![Wireframe_page](/docs/img/sketch.md/auctioneer.png)
 
 
 
