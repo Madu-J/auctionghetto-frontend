@@ -2,11 +2,11 @@
 
 ## Navigation
 
- 1.  *As a user*  I should be able to find and access the navigation bar on every page for easy navigation to different sections of the website.
+ 1.  *As a user*  I want to easily access the navigation bar on every page to different sections of the website.
 
- 2. *As a user*  I should be able to scroll without pagination to find more auction listing.                                                 
+ 2. *As a user*  I want to be able to scroll without pagination to find more auction listing or product that I am seraching for.                                                 
 
- 3. *As a user* I should be able to search for keywords in the search bar to quickly find product or items with information specifically relate to it.
+ 3. *As a user* I should be able to search for keywords in search bar to quickly find product or items with information specifically relate to it.
  
 
 ## Account                                                                                        
@@ -14,8 +14,6 @@
  1. *As a user* I should be able to find a column displaying the "Highly Popular" to view them. 
 
  2. *As a user* I should be able to click on a profile (auctioneer) to access more information about the seller.
-
- 3. *As a user*  I should be able to edit my profile to update or change my information.
 
 
 ## Auctionghetto website

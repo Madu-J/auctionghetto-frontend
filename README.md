@@ -68,11 +68,9 @@
 
 # User Stories
 
- * The user stories are readily available in the GitHub repository, neatly grouped into Epics 
-   for enhanced organization. This 
-   allows for easy tracking and management of project features. By organizing user stories into Epics, you can get a clear visual representation of the project's progress and understand the high-level goals and themes.
-  
- - ![user-story](media/user_st.png)
+ * The user stories are available to view in  GitHub, under Auctionghetto backend repository. Moreso, to view highlight or few specific issues about the frntend. The links below provide you with the user stories.
+   
+ - To view User-Story frontend - Click [here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/USERSTORY.md)
 
  - To view more User Stories- Click [here](https://github.com/users/Madu-J/projects/14/views/1)
 
