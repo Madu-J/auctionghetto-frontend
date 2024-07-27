@@ -70,9 +70,9 @@
 
  * The user stories are available to view in  GitHub, under Auctionghetto backend repository. Moreso, to view highlight or few specific issues about the frntend. The links below provide you with the user stories.
    
- - To view User-Story frontend - Click [here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/USERSTORY.md)
+ - To view User-Story frontend - Click[here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/USERSTORY.md)
 
- - To view more User Stories- Click [here](https://github.com/users/Madu-J/projects/14/views/1)
+ - To view full Auctionghetto User Stories- Click[here](https://github.com/users/Madu-J/projects/14/views/1)
 
   ## Agile methodology
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
