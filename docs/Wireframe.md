@@ -10,9 +10,9 @@
  - ![Wireframe_page](/docs/img/sketch.md/lfeed.jpg)
 
 
-## Auction create Page
+## Auction Create Page
 
- * The CreateAuctionPage wireframe informs users about the form where they can create new auction listing on Auctionghetto platform. All the fields and sections are displayed for users to input details about the items or products they wish to sell, by entering product's title, make,  year of manufacture, product condition and pricing information.
+ * The Auction Crate Page wireframe informs users about the form where they can create new auction listing on Auctionghetto platform. All the fields and sections are displayed for users to input details about the items or products they wish to sell, by entering product's title, make,  year of manufacture, product condition and pricing information.
  - ![Wireframe_page](/docs/img/sketch.md/additems.jpg)
 
 
