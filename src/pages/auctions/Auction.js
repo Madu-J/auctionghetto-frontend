@@ -186,7 +186,7 @@ function Auction(props) {
         <Media className="align-items-center justify-content-around">
           <span>Sold by:</span>
           <Link to={`/auctioneers/${auctioneer_id}`}>
-            <Avatar src={auctioneer_image} height={35} />
+            <Avatar src={auctioneer_image} height={55} />
             {owner}
           </Link>
           <div className="d-flex align-items-center">

@@ -256,7 +256,7 @@ function AuctionEditForm() {
         cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        bookmark
+        save
       </Button>
     </div>
   );

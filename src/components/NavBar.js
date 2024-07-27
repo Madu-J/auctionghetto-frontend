@@ -53,7 +53,7 @@ const NavBar = () => {
             activeClassName={styles.Active}
             to="/bookmarks"
           >
-            <i className="fas fa-bookmark"></i>Bookmarks
+            <i className="fas fa-bookmark"></i>Bookmark
           </NavLink>
           <NavLink 
           className={styles.NavLink} 
