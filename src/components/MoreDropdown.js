@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import styles from "../styles/MoreDropdown.module.css";
 
+
 /* This dropdown component is enables edit or delete
 functionality for the Auctions and Auctioneer pages
  */
@@ -72,6 +73,6 @@ export function AuctioneerEditDropdown({ id }) {
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-    );
+  );
 }
     
