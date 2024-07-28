@@ -54,7 +54,7 @@ function AuctionsList({ message, filter = "" }) {
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <PopularAuctioneers mobile />
+      <PopularAuctioneers mobile />
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -64,9 +64,9 @@ function AuctionsList({ message, filter = "" }) {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             type="text"
-            name="name"
-            autoComplete="name"
+            name='name'
             className="mr-sm-2"
+            autocomplete="name"
             placeholder="Search for  Auction"
           />
         </Form>

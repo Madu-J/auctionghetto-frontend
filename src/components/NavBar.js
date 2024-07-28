@@ -86,7 +86,7 @@ const NavBar = () => {
         >
           <i className="fas fa-user-plus"></i>Sign up
         </NavLink>
-        </>
+      </>
     );
       
     return (
