@@ -65,11 +65,11 @@ const UserPasswordForm = () => {
             <Form.Group>
               <Form.Label>New password</Form.Label>
               <Form.Control
-                placeholder="new password"
                 type="password"
+                name="new_password1"
                 value={new_password1}
                 onChange={handleChange}
-                name="new_password1"
+               placeholder="new password"
               />
             </Form.Group>
             {errors?.new_password1?.map((message, idx) => (
@@ -80,11 +80,11 @@ const UserPasswordForm = () => {
             <Form.Group>
               <Form.Label>Confirm password</Form.Label>
               <Form.Control
-                placeholder="confirm new password"
                 type="password"
+                name="new_password2"
                 value={new_password2}
                 onChange={handleChange}
-                name="new_password2"
+                placeholder="confirm new password"
               />
             </Form.Group>
             {errors?.new_password2?.map((message, idx) => (

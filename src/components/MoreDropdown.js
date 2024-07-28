@@ -75,4 +75,3 @@ export function AuctioneerEditDropdown({ id }) {
     </Dropdown>
   );
 }
-    

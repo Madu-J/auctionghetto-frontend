@@ -65,7 +65,6 @@ function AuctionsList({ message, filter = "" }) {
             onChange={(event) => setQuery(event.target.value)}
             type="text"
             name='name'
-            autoComplete="off"
             className="mr-sm-2"
             placeholder="Search for  Auction"
           />

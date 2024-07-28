@@ -274,9 +274,7 @@ function AuctionEditForm() {
               </figure>
               <div>
                 <Form.Label
-                  className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
-                  htmlFor="image-upload"
-                >
+                  className={`${btnStyles.Button} ${btnStyles.Blue} btn`} htmlFor="image-upload">
                   Change image
                 </Form.Label>
               </div>

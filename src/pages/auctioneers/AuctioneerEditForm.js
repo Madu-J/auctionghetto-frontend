@@ -67,6 +67,7 @@ const AuctioneerEditForm = () => {
             phone,
             image,
           } = data;
+
           setAuctioneerData({
             name,
             description,
