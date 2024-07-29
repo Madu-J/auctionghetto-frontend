@@ -107,7 +107,7 @@ const AuctioneerPage = () => {
               )}
               <Col>
                 <p className="font-weight-bold">Contact us!</p>
-                {auctioneer?.name && <p>Company: {auctioneer.name}</p>}
+                {auctioneer?.name && <p>Auctioneer: {auctioneer.name}</p>}
                 {auctioneer?.city && <p>City: {auctioneer.city}</p>}
                 {auctioneer?.postcode && <p>Postcode: {auctioneer.postcode}</p>}
                 {auctioneer?.street_address && (

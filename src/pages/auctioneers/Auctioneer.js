@@ -9,7 +9,7 @@ import Avatar from '../../components/Avatar';
 
 //Component used for auctioneer information and avatar
 const Auctioneer = (props) => {
-  const { auctioneer, mobile, imageSize = 40 } = props;
+  const { auctioneer, mobile, imageSize = 55 } = props;
   const { id, following_id, image, owner } = auctioneer;
   // console.log(auctioneer)
 
