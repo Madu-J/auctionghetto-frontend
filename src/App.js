@@ -10,7 +10,7 @@ import UsernameForm from './pages/auctioneers/UsernameForm';
 import UserPasswordForm from './pages/auctioneers/UserPasswordForm';
 import AuctionsList from './pages/auctions/AuctionsList';
 import AuctionPage from './pages/auctions/AuctionPage';
-import AuctionEditForm from './pages/auctioneers/AuctioneerPage';
+import AuctionEditForm from './pages/auctions/AuctionEditForm';
 import AuctioneerEditForm from './pages/auctioneers/AuctioneerEditForm';
 import AuctioneerPage from './pages/auctioneers/AuctioneerPage';
 import AuctionCreateForm from './pages/auctions/AuctionCreateForm';
@@ -57,8 +57,8 @@ function App() {
           <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/auctions/create" render={() => <AuctionCreateForm />} />
           <Route exact path="/auctions/:id" render={() => <AuctionPage />} />
-          <Route exact path="/auction/:id/edit" render={() => <AuctionEditForm />} />
-          <Route exact path="/auctioneer/:id" render={() => <AuctioneerPage />} />
+          <Route exact path="/auctions/:id/edit" render={() => <AuctionEditForm />} />
+          <Route exact path="/auctioneers/:id" render={() => <AuctioneerPage />} />
           <Route
             exact
             path="/auctioneers/:id/edit/username"
