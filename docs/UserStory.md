@@ -13,7 +13,9 @@
 
  1. *As a user* I should be able to find a column displaying the "Highly Popular" to view them. 
 
- 2. *As a user* I should be able to click on a profile (auctioneer) to access more information about the seller.
+ 2. *As a user*  I should be able to edit my profile auctioneer to update or change my information.
+
+ 3. *As a user* I should be able to click on a profile (auctioneer) to access more information about the seller.
 
 
 ## Auctionghetto website

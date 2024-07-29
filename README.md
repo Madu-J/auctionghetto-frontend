@@ -145,7 +145,7 @@ Updating Auctionghetto Post: On the Auctions Edit page, users can make changes a
 - Uploading New Images: Users may also have the option to upload new images or replace existing auction item to provide a potential buyer with clearer picture of auction item.
 
 - Updating data and saving changes: If there is error or mistake in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
-![Auction Edit Page](./static/)
+![Auction Edit Page](./docs/img/auctioneditp.png)
 
 <br>
 
@@ -166,6 +166,7 @@ The auctioneer page serves as a critical component of the platform, enabling sel
 
 * This indispensable functionality enables users to preserve their relevancy in the market by 
 consistently presenting the most current and pertinent details about who they are and their products to potential customers.
+![Edit_page_Auctioneer](./docs/img/editauctioneerp.png)
 ![Edit_page_Auctioneer](./docs/img/adminpa.png)
 
 <br>
@@ -235,6 +236,7 @@ allows users to make comparing and considering options, making it easier for the
 * Fixed Bugs
 - Avatar
 - Image - There was issues with images.
+- Importerror
 
 <br>
 
