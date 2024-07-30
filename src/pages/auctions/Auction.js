@@ -118,85 +118,85 @@ function Auction(props) {
       <Card.Body>
         <Row className="mb-2 text-left no-gutters">
           <Col>
-            <Row>
-                <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-shop"></i>
-                </Col>
-                <Col className="d-inline-block" xs={9}>
-                  <span className="d-block text-muted">Categories</span>
-                  <span className="font-weight-bold text-capitalize">
-                    {categories}
-                  </span>
-                </Col>
-            </Row>
-        </Col>
-        <Col>
-            <Row>
-                <Col className="d-inline-block" xs={3}>
-                  <i className="fa-solid fa-cart-flatbed"></i>
+              <Row>
+                  <Col className="d-inline-block" xs={3}>
+                  <i className="fa-solid fa-shop"></i>
+                  </Col>
+                  <Col className="d-inline-block" xs={9}>
+                    <span className="d-block text-muted">Categories</span>
+                    <span className="font-weight-bold text-capitalize">
+                      {categories}
+                    </span>
+                  </Col>
+              </Row>
+          </Col>
+          <Col>
+              <Row>
+                  <Col className="d-inline-block" xs={3}>
+                    <i className="fa-solid fa-cart-flatbed"></i>
                 </Col>
                 <Col className="d-inline-block" xs={9}>
                   <span className="d-block text-muted">Products</span>
                   <span className="font-weight-bold">{products}</span>
                 </Col>
             </Row>
-        </Col>
-        <Col>
-            <Row>
-              <Col className="d-inline-block" xs={3}>
-              <i className="fa-solid fa-calendar-day"></i>
-              </Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Auctionday</span>
-                <span className="font-weight-bold">{auctionday}</span>
-              </Col>
-            </Row>
-        </Col>
-      </Row>
-      <Row className="mb-5 text-left no-gutters">
-      <Col>
-            <Row>
-              <Col className="d-inline-block" xs={3}>
-                <i className="fa-solid fa-calendar-days"></i>
-              </Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Year</span>
-                <span className="font-weight-bold text-capitalize">
-                  {year}
-                  </span>
-              </Col>
-            </Row>
-      </Col>
-      <Col>
-            <Row>
-              <Col className="d-inline-block" xs={3}></Col>
-              <Col className="d-inline-block" xs={9}>
-                <span className="d-block text-muted">Price</span>
-                <span className="font-weight-bold">{price}€</span>
-              </Col>
-            </Row>
           </Col>
-      </Row>
+          <Col>
+              <Row>
+                <Col className="d-inline-block" xs={3}>
+                <i className="fa-solid fa-calendar-day"></i>
+                </Col>
+                <Col className="d-inline-block" xs={9}>
+                  <span className="d-block text-muted">Auctionday</span>
+                  <span className="font-weight-bold">{auctionday}</span>
+                </Col>
+              </Row>
+            </Col>
+        </Row>
+        <Row className="mb-5 text-left no-gutters">
+          <Col>
+              <Row>
+                <Col className="d-inline-block" xs={3}>
+                  <i className="fa-solid fa-calendar-days"></i>
+                </Col>
+                <Col className="d-inline-block" xs={9}>
+                  <span className="d-block text-muted">Year</span>
+                  <span className="font-weight-bold text-capitalize">
+                    {year}
+                    </span>
+                </Col>
+              </Row>
+          </Col>
+          <Col>
+              <Row>
+                <Col className="d-inline-block" xs={3}></Col>
+                <Col className="d-inline-block" xs={9}>
+                  <span className="d-block text-muted">Price</span>
+                  <span className="font-weight-bold">{price}€</span>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
 
-        {title && <Card.Title className="text-left">{title}</Card.Title>}
-        {description && (
-          <Card.Text className="text-left mb-5">{description}</Card.Text>
-        )}
+          {title && <Card.Title className="text-left">{title}</Card.Title>}
+          {description && (
+            <Card.Text className="text-left mb-5">{description}</Card.Text>
+          )}
 
-        <Media className="align-items-center justify-content-around">
-          <span>Sold by:</span>
-          <Link to={`/auctioneers/${auctioneer_id}`}>
-            <Avatar src={auctioneer_image} height={40} />
-            {owner}
-          </Link>
-          <div className="d-flex align-items-center">
-            <span>Added: {updated_at}</span>
-            {is_owner && auctionPage && (
-              <MoreDropdown
-                handleEdit={handleEdit}
-                handleDelete={handleDelete}
-              />
-            )}
+          <Media className="align-items-center justify-content-around">
+            <span>Sold by:</span>
+            <Link to={`/auctioneers/${auctioneer_id}`}>
+              <Avatar src={auctioneer_image} height={55} />
+              {owner}
+            </Link>
+            <div className="d-flex align-items-center">
+              <span>Added: {updated_at}</span>
+              {is_owner && auctionPage && (
+                <MoreDropdown
+                  handleEdit={handleEdit}
+                  handleDelete={handleDelete}
+                />
+              )}
           </div>
         </Media>
       </Card.Body>
