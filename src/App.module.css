@@ -93,13 +93,3 @@ figure {
     background: #555;
 }
 
-/* fix padding under menu after resize */
-@media only screen and (max-width: 500px) {
-    body {
-      font-size: 0.75rem;
-    }
-    i {
-      font-size: 0.65rem;
-      padding: 3px;
-    }
-}

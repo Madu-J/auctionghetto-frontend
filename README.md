@@ -302,11 +302,9 @@ allows users to make comparing and considering options, making it easier for the
 
 * React Bootstrap documentation and examples
 * CodeInstitute tutorial materials and tutors
-* Suzan Dewitz - SuzanDewitz/autotraderss
-* Google search engine
-* SlackOverflow
 * Moments walkthrough project
-* Antonio Rodriquez - mentor
+* Autotraders
+* Google search engine
 
 <br>
 
