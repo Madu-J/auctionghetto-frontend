@@ -226,7 +226,7 @@ allows users to make comparing and considering options, making it easier for the
 <br>
 
 # Testing
-- [TEST.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/TEST.md)
+- To view manual test documentaion. Click > [TEST.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/TEST.md)
 - Code underwent through Jigsaw validation.
 - [W3C Markup Validator](/validator-css/)
 
