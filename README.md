@@ -29,11 +29,11 @@
 
 ## Table of Contents
 
- - + [User Experience (UX)](#user-experience-ux)
+ - [User Experience (UX)](#user-experience-ux)
 
-  - [User Stories](#user-stories)
+ - [User Stories](#user-stories)
 
-  - [Design](#design)
+ - [Design](#design)
 
 + [Feature](#feature)
      - [Future Features](#future-features)
@@ -124,7 +124,7 @@ The listing also displays the price of the auction, helping users evaluate and o
 
 ## Action Details page
 
-* The auction listing section displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
+- The auction listing section displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
 
 Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
 
@@ -137,7 +137,7 @@ The listing also displays the price of the auction, helping users evaluate and o
 
 ## Auctions Edit page
 
-* The Auctions Edit page is a dedicated page that allows users to update an existing 
+- The Auctions Edit page is a dedicated page that allows users to update an existing 
 posts, which provides a convenient and user-friendly interface for modifying details information associated with a particular listing.
 Updating Auctionghetto Post: On the Auctions Edit page, users can make changes and updates to an existing auction post. This includes modifying various aspects of listing on the website, such as:
 - Editable Fields: Users can update fields such as the price of each auction item, description, technical specifications, features, condition, contact information, and any other relevant details associated with the auction.
@@ -151,7 +151,7 @@ Updating Auctionghetto Post: On the Auctions Edit page, users can make changes a
 
 ## Auctioneer page
 
-* The (Auctioneer page) a profile page plays a vital role in providing sellers with a valuable opportunity to showcase their company effectively. It serves as a dedicated platform where sellers can present their company in a comprehensive and compelling manner to users.
+- The (Auctioneer page) a profile page plays a vital role in providing sellers with a valuable opportunity to showcase their company effectively. It serves as a dedicated platform where sellers can present their company in a comprehensive and compelling manner to users.
 
 The auctioneer page allows sellers to create a visually appealing and informative presentation of their product. They can include high-quality images, and to engage users and convey their brand identity effectively.
 
@@ -162,9 +162,9 @@ The auctioneer page serves as a critical component of the platform, enabling sel
 
 ## Edit Actioneer
 
-* Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their existing information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
+- Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their existing information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
 
-* This indispensable functionality enables users to preserve their relevancy in the market by 
+- This indispensable functionality enables users to preserve their relevancy in the market by 
 consistently presenting the most current and pertinent details about who they are and their products to potential customers.
 ![Edit_page_Auctioneer](./docs/img/editauctioneerp.png)
 ![Edit_page_Auctioneer](./docs/img/adminpa.png)
@@ -173,9 +173,9 @@ consistently presenting the most current and pertinent details about who they ar
 
 ## Feed Page
 
-* The Feed page displays collection of listed auctions, and tailored to the specific preferences of each user. This designed feature presents a comprehensive display of various product listed by the auctioneers s whom the user follows.
+- The Feed page displays collection of listed auctions, and tailored to the specific preferences of each user. This designed feature presents a comprehensive display of various product listed by the auctioneers s whom the user follows.
 
-* Feed page serves as a convenient and centralized platform for users to stay constantly 
+- Feed page serves as a convenient and centralized platform for users to stay constantly 
 updated with the latest inventory from their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
 ![Feed_Page](./docs/img/feedp.png)
 
@@ -183,9 +183,9 @@ updated with the latest inventory from their preferred sellers. This ensures tha
 
 ## Bookmark page
 
-* The Bookmark page serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
+- The Bookmark page serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
 
-* This page enables users to effortlessly retrieve or review their preferred selections. Also 
+- This page enables users to effortlessly retrieve or review their preferred selections. Also 
 allows users to make comparing and considering options, making it easier for them to make informed purchasing decisions.
 
 ![Bookmark_page](./docs/img/bookmarkp.png)
@@ -194,9 +194,9 @@ allows users to make comparing and considering options, making it easier for the
 
 # Future Features
 
-* Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
+- Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
 
-*Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
+- Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
 <br>
 
@@ -226,6 +226,7 @@ allows users to make comparing and considering options, making it easier for the
 <br>
 
 # Testing
+- [TEST.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/TEST.md)
 - Code underwent through Jigsaw validation.
 - [W3C Markup Validator](/validator-css/)
 
@@ -233,7 +234,7 @@ allows users to make comparing and considering options, making it easier for the
 
 ## Bugs
 
-* Fixed Bugs
+#### Fixed Bugs
 - Avatar
 - Image - There was issues with images.
 - Importerror
@@ -250,11 +251,10 @@ allows users to make comparing and considering options, making it easier for the
 
 <br>
 
-* To deploy the project, follow these steps:
+#### To deploy the project, follow these steps:
 
-*  Forking the GitHub Repository
-
-* Go to the project repository.
+- Forking the GitHub Repository
+- Go to the project repository.
 - In the top-right corner of the page, click the "Fork" button.
 - This will create a copy of the repository in your own GitHub account.
 - Running the project locally
@@ -318,3 +318,5 @@ allows users to make comparing and considering options, making it easier for the
 * The Noun Project
 
 <br>
+
+[Back to top](#top)
