@@ -82,13 +82,13 @@ function AuctionsList({ message, filter = "" }) {
                 next={() => fetchMoreData(auctions, setAuctions)}
               />
             ) : (
-              <Container className={appStyles.Content}>
+              <Container className={appStyles.Description}>
                 <Asset src={NoResults} message={message} />
               </Container>
             )}
           </>
         ) : (
-          <Container className={appStyles.Content}>
+          <Container className={appStyles.Description}>
             <Asset spinner />
           </Container>
         )}

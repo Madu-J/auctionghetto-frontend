@@ -35,14 +35,14 @@ const Auctioneer = (props) => {
           !is_owner &&
           (following_id ? (
             <Button
-              className={`${btnStyles.Button} ${btnStyles.BrownOutline}`}
+              className={`${btnStyles.Button} ${btnStyles.PinkOutline}`}
               onClick={() => handleUnfollow(auctioneer)}
             >
               unfollow
             </Button>
           ) : (
             <Button
-              className={`${btnStyles.Button} ${btnStyles.Brown}`}
+              className={`${btnStyles.Button} ${btnStyles.Pink}`}
               onClick={() => handleFollow(auctioneer)}
             >
               follow

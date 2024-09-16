@@ -45,14 +45,14 @@
     color: #2142b2;
 }
   
-.Black,
-.BlackOutline:hover {
+.Pink,
+.PinkOutline:hover {
     background-color: #242a3d;
     color: aliceblue;
 }
   
-.Black:hover,
-.BlackOutline {
+.Pink:hover,
+.PinkOutline {
     background-color: aliceblue;
     color: #242a3d;
 }
