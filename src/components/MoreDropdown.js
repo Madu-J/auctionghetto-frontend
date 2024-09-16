@@ -20,8 +20,8 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
   
 export const MoreDropdown = ({handleEdit, handleDelete}) => {
     return (
-      <Dropdown className="ml-auto" drop="left">
-        <Dropdown.Toggle as={ThreeDots} />
+      <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="right"> Update auction
+        <Dropdown.Toggle as={ThreeDots} /> 
   
         <Dropdown.Menu
           className="text-center"
@@ -49,7 +49,7 @@ export const MoreDropdown = ({handleEdit, handleDelete}) => {
 export function AuctioneerEditDropdown({ id }) {
   const history = useHistory();
   return (
-    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">
+    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left"> Update auctioneer
       <Dropdown.Toggle as={ThreeDots} 
       />
       <Dropdown.Menu>
