@@ -60,7 +60,7 @@ const UserPasswordForm = () => {
   return (
     <Row>
       <Col className="py-2 mx-auto text-center" md={6}>
-        <Container className={appStyles.Content}>
+        <Container className={appStyles.Description}>
           <Form onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Label>New password</Form.Label>

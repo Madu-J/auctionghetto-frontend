@@ -13,7 +13,7 @@ import styles from "../../styles/Auction.module.css";
 
 
 /* Component used for creating the Auctionghetto post information */
-function Auction(props) {
+const Auction = (props) => {
   const {
     id,
     owner,

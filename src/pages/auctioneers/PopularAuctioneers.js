@@ -11,7 +11,7 @@ const PopularAuctioneers = ({ mobile }) => {
 
   return (
     <Container
-      className={`${appStyles.Content} ${
+      className={`${appStyles.Description} ${
         mobile && "d-lg-none text-center mb-3"
       }`}
     >

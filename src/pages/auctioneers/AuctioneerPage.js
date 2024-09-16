@@ -86,14 +86,14 @@ const AuctioneerPage = () => {
               !is_owner &&
               (auctioneer?.following_id ? (
                 <Button
-                  className={`${btnStyles.Button} ${btnStyles.BlackOutline}`}
+                  className={`${btnStyles.Button} ${btnStyles.BrownOutline}`}
                   onClick={() => handleUnfollow(auctioneer)}
                 >
                   unfollow
                 </Button>
               ) : (
                 <Button
-                  className={`${btnStyles.Button} ${btnStyles.Black}`}
+                  className={`${btnStyles.Button} ${btnStyles.Brown}`}
                   onClick={() => handleFollow(auctioneer)}
                 >
                   follow
@@ -152,7 +152,7 @@ const AuctioneerPage = () => {
       <Row>
         <Col className="py-2 p-0 p-lg-2" lg={8}>
           <PopularAuctioneers mobile />
-          <Container className={appStyles.Content}>
+          <Container className={appStyles.Description}>
             {hasLoaded ? (
               <>
                 {mainAuctioneer}
