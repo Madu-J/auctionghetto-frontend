@@ -32,14 +32,14 @@ export const MoreDropdown = ({handleEdit, handleDelete}) => {
           aria-label="edit"
           onClick={handleEdit}
         >
-          <i className="fas fa-edit" />
+          <i className="fas fa-edit" /> Edit auction
           </Dropdown.Item>
           <Dropdown.Item
             className={styles.DropdownItem}
             aria-label="delete"
             onClick={handleDelete}
           >
-            <i className="fas fa-trash-alt" />
+            <i className="fas fa-trash-alt" /> Delete auction
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
@@ -57,19 +57,19 @@ export function AuctioneerEditDropdown({ id }) {
           onClick={() => history.push(`/auctioneers/${id}/edit`)}
           aria-label="edit-auctioneer"
         >
-          <i className="fas fa-edit" />edit auctioneer
+          <i className="fas fa-edit" />Edit auctioneer
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/auctioneers/${id}/edit/username`)}
           aria-label="edit-username"
         >
-          <i className="far fa-id-card" />change username
+          <i className="far fa-id-card" />Change username
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/auctioneers/${id}/edit/password`)}
           aria-label="edit-password"
         >
-          <i className="fas fa-key" />change password
+          <i className="fas fa-key" />Change password
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
