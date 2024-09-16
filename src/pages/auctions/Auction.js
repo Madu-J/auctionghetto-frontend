@@ -11,7 +11,8 @@ import { MoreDropdown } from "../../components/MoreDropdown";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import styles from "../../styles/Auction.module.css";
 
-// Component used for creating the Auctionghetto post information.
+
+/* Component used for creating the Auctionghetto post information */
 function Auction(props) {
   const {
     id,
@@ -36,7 +37,7 @@ function Auction(props) {
   const is_owner = currentUser?.username === owner;
   const history = useHistory();
 
-   // Bookmark your favorite auction.
+   /* Bookmark your favorite auction */
    const handleBookmark = async () => {
     try {
       const { data } = await axiosRes.post("/bookmarks/", { auction: id });
@@ -51,7 +52,7 @@ function Auction(props) {
     }
   };
 
-   // Delete auction from bookmarked auctions
+   /* Delete auction from bookmarked auctions */
   const handleDeleteBookmark = async () => {
     try {
       await axiosRes.delete(`/bookmarks/${bookmark_id}/`);
@@ -65,13 +66,11 @@ function Auction(props) {
       //console.log(err);
     }
   };
-
-
   const handleEdit = () => {
     history.push(`/auctions/${id}/edit`);
   };
 
-  // Delete auctioghetto posting
+  /* Delete auctioghetto posting */
   const handleDelete = async () => {
     try {
       await axiosRes.delete(`/auctions/${id}/`);
@@ -84,11 +83,31 @@ function Auction(props) {
   return (
     <Card className={styles.Auction}>
       <Card.Body>
+      <Media className="align-items-center justify-content-around">
+            <span>Sold by:</span>
+            <Link to={`/auctioneers/${auctioneer_id}`}>
+              <Avatar src={auctioneer_image} height={55} />
+              {owner}
+            </Link>
+            <div className="d-flex align-items-center">
+              <span>Added: {updated_at}</span>
+              {is_owner && auctionPage && (
+                <MoreDropdown
+                  handleEdit={handleEdit}
+                  handleDelete={handleDelete}
+                />
+              )}
+          </div>
+        </Media>
+      </Card.Body>
         <Link to={`/auctions/${id}`}>
           <Card.Img src={image} alt={title} />
         </Link>
-      </Card.Body>
-
+      <Card.Body>
+        {title && <Card.Title className="text-left">{title}</Card.Title>}
+          {description && (
+            <Card.Text className="text-left mb-5">{description}</Card.Text>
+          )}
       <div className={styles.PostBar}>
         {is_owner ? (
           <OverlayTrigger
@@ -114,8 +133,6 @@ function Auction(props) {
           </OverlayTrigger>
         )}
       </div>
-
-      <Card.Body>
         <Row className="mb-2 text-left no-gutters">
           <Col>
               <Row>
@@ -177,28 +194,6 @@ function Auction(props) {
               </Row>
             </Col>
           </Row>
-
-          {title && <Card.Title className="text-left">{title}</Card.Title>}
-          {description && (
-            <Card.Text className="text-left mb-5">{description}</Card.Text>
-          )}
-
-          <Media className="align-items-center justify-content-around">
-            <span>Sold by:</span>
-            <Link to={`/auctioneers/${auctioneer_id}`}>
-              <Avatar src={auctioneer_image} height={55} />
-              {owner}
-            </Link>
-            <div className="d-flex align-items-center">
-              <span>Added: {updated_at}</span>
-              {is_owner && auctionPage && (
-                <MoreDropdown
-                  handleEdit={handleEdit}
-                  handleDelete={handleDelete}
-                />
-              )}
-          </div>
-        </Media>
       </Card.Body>
     </Card>
   );
