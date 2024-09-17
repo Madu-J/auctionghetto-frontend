@@ -66,7 +66,6 @@ const NavBar = () => {
             to={`/auctioneers/${currentUser?.auctioneer_id}`}
           >
             <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={20}/>
-            <i className="fas fa-user"></i>
           </NavLink>
       </>
     );

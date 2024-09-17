@@ -254,7 +254,7 @@ function AuctionEditForm() {
       ))}
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => {}}
+        onClick={() => history.goBack()}
       >
         cancel
       </Button>
@@ -277,7 +277,9 @@ function AuctionEditForm() {
               </figure>
               <div>
                 <Form.Label
-                  className={`${btnStyles.Button} ${btnStyles.Blue} btn`} htmlFor="image-upload">
+                  className={`${btnStyles.Button} ${btnStyles.Blue} btn`} 
+                  htmlFor="image-upload"
+                >
                   Change image
                 </Form.Label>
               </div>
