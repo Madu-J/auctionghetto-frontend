@@ -12,34 +12,34 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
       className="fas fa-ellipsis-v"
       ref={ref}
       onClick={(e) => {
-        e.preventDefault();
-        onClick(e);
+      e.preventDefault();
+      onClick(e);
       }}
     />
 ));
   
 export const MoreDropdown = ({handleEdit, handleDelete}) => {
     return (
-      <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="right"> Update auction
+      <Dropdown className='ml-auto px-3' drop='bottom-end'> Update auction
         <Dropdown.Toggle as={ThreeDots} /> 
   
         <Dropdown.Menu
           className="text-center"
           popperConfig={{strategy: "fixed"}}
         >
-        <Dropdown.Item
+          <Dropdown.Item
           className={styles.DropdownItem}
           aria-label="edit"
           onClick={handleEdit}
         >
-          <i className="fas fa-edit" /> Edit auction
+          <i className="fas fa-edit" />Edit
           </Dropdown.Item>
           <Dropdown.Item
             className={styles.DropdownItem}
             aria-label="delete"
             onClick={handleDelete}
           >
-            <i className="fas fa-trash-alt" /> Delete auction
+            <i className="fas fa-trash-alt" />Delete
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
@@ -49,7 +49,7 @@ export const MoreDropdown = ({handleEdit, handleDelete}) => {
 export function AuctioneerEditDropdown({ id }) {
   const history = useHistory();
   return (
-    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left"> Update auctioneer
+    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">Update auctioneer
       <Dropdown.Toggle as={ThreeDots} 
       />
       <Dropdown.Menu>
