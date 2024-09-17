@@ -111,6 +111,7 @@ function AuctionEditForm() {
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
     }
+
     try {
       await axiosReq.put(`/auctions/${id}/`, formData);
       history.push(`/auctions/${id}`);

@@ -219,7 +219,7 @@ function AuctionCreateForm() {
       ))}
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => {}}
+        onClick={() => history.goBack()}
       >
         cancel
       </Button>
