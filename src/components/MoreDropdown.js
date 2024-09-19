@@ -20,7 +20,7 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
   
 export const MoreDropdown = ({handleEdit, handleDelete}) => {
     return (
-      <Dropdown className='ml-auto px-3' drop='bottom-end'> Update auction
+      <Dropdown className='ml-auto px-3' drop='down'> Update auction
         <Dropdown.Toggle as={ThreeDots} /> 
   
         <Dropdown.Menu
