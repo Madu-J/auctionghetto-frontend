@@ -106,7 +106,7 @@ const AuctioneerPage = () => {
                 <Row className="text-left p-3">{auctioneer.description}</Row>
               )}
               <Col>
-                <p className="font-weight-bold">My Contact!</p>
+                <p className="font-weight-bold">Auctioneer Contact</p>
                 {auctioneer?.name && <p>Auctioneer: {auctioneer.name}</p>}
                 {auctioneer?.city && <p>City: {auctioneer.city}</p>}
                 {auctioneer?.postcode && <p>Postcode: {auctioneer.postcode}</p>}
