@@ -71,7 +71,7 @@ function AuctionCreateForm() {
     formData.append("title", title);
     formData.append("categories", categories);
     formData.append("products", products);
-    formData.append("auctionday", auctionday);
+    formData.append("auction_day",auctionday);
     formData.append("description", description);
     formData.append("year", year);
     formData.append("price", price);
