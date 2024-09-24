@@ -31,15 +31,15 @@ function App() {
           path="/" 
           render={() => (
           <AuctionsList message="No result found, adjust keyword serach."
-          /> 
+        /> 
         )} 
         />
         <Route 
           exact 
           path="/feed" 
           render={() => (
-            <AuctionsList message="No result found, adjust keyword serach or follow a user."
-            filter={`owner__followed__owner__auctioneer=${auctioneer_id}&`} 
+          <AuctionsList message="No result found, adjust keyword serach or follow a user."
+          filter={`owner__followed__owner__auctioneer=${auctioneer_id}&`} 
         /> 
         )} 
         />
@@ -47,34 +47,38 @@ function App() {
           exact 
           path="/bookmarks" 
           render={() => (
-            <AuctionsList
-                message="No results found, adjust the search"
-                filter={`bookmarks__owner__auctioneer=${auctioneer_id}&ordering=-bookmarks__created_at&`}
-              />
-          )}
+          <AuctionsList message="No results found, adjust the search"
+          filter={`bookmarks__owner__auctioneer=${auctioneer_id}&ordering=-bookmarks__created_at&`}
         />
-          <Route exact path="/signin" component={SignInForm} />
-          <Route exact path="/signup" component={SignUpForm} />
-          <Route exact path="/auctions/create" render={() => <AuctionCreateForm />} />
-          <Route exact path="/auctions/:id" render={() => <AuctionPage />} />
-          <Route exact path="/auctions/:id/edit" render={() => <AuctionEditForm />} />
-          <Route exact path="/auctioneers/:id" render={() => <AuctioneerPage />} />
-          <Route
-            exact
-            path="/auctioneers/:id/edit/username"
-            render={() => <UsernameForm />}
-          />
-          <Route
-            exact
-            path="/auctioneers/:id/edit/password"
-            render={() => <UserPasswordForm />}
-          />
-          <Route
-            exact
-            path="/auctioneers/:id/edit"
-            render={() => <AuctioneerEditForm />}
-          />
-          <Route render={() => <NotFound />} />
+        )}
+        />
+        <Route exact path="/signin" component={SignInForm} />
+        <Route exact path="/signup" component={SignUpForm} />
+        <Route 
+          exact 
+          path="/auctions/create" 
+          render={() => <AuctionCreateForm 
+        />} 
+        />
+        <Route exact path="/auctions/:id" render={() => <AuctionPage />} />
+        <Route exact path="/auctions/:id/edit" render={() => <AuctionEditForm />} />
+        <Route exact path="/auctioneers/:id" render={() => <AuctioneerPage />} />
+        <Route
+          exact
+          path="/auctioneers/:id/edit/username"
+          render={() => <UsernameForm />}
+        />
+        <Route
+          exact
+          path="/auctioneers/:id/edit/password"
+          render={() => <UserPasswordForm />}
+        />
+        <Route
+          exact
+          path="/auctioneers/:id/edit"
+          render={() => <AuctioneerEditForm />}
+        />
+        <Route render={() => <NotFound />} />
         </Switch>
       </Container>
     </div>
