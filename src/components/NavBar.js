@@ -36,7 +36,7 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/auctions/create"
     >
-        <i className="fas fa-plus"></i> Add Items
+        <i className="fas fa-plus"></i> Add Item
     </NavLink>
     );
 
@@ -65,7 +65,7 @@ const NavBar = () => {
             className={styles.NavLink}
             to={`/auctioneers/${currentUser?.auctioneer_id}`}
           >
-            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={20}/>
+            <Avatar src={currentUser?.auctioneer_image} text="Auctioneer" height={42}/>
             <i className="fas fa-user"></i>
           </NavLink>
       </>
@@ -100,7 +100,7 @@ const NavBar = () => {
         <Container>
           <NavLink to="/">
           <Navbar.Brand className="mr-0">
-            <img src={logo} alt="logo" height="35" />
+            <img src={logo} alt="logo" height="45" />
             <div className={styles.Slogan}>
             <span>Welcome to Auctionghetto</span>
             </div>
