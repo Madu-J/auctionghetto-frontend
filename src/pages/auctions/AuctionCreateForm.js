@@ -24,9 +24,9 @@ function AuctionCreateForm() {
  
   const [auctionData, setAuctionData] = useState({
     title: "",
-    categories: "home",
-    products: "phones",
-    auctionday: "auctionday",
+    categories: "",
+    products: "",
+    auctionday: "",
     description: "",
     year: "",
     price: "",
@@ -71,7 +71,7 @@ function AuctionCreateForm() {
     formData.append("title", title);
     formData.append("categories", categories);
     formData.append("products", products);
-    formData.append("auction_day",auctionday);
+    formData.append("auctionday", auctionday);
     formData.append("description", description);
     formData.append("year", year);
     formData.append("price", price);
@@ -219,7 +219,7 @@ function AuctionCreateForm() {
       ))}
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => history.goBack()}
+        onClick={() => {}}
       >
         cancel
       </Button>

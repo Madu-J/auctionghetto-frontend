@@ -255,7 +255,7 @@ function AuctionEditForm() {
       ))}
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => history.goBack()}
+        onClick={() => {}}
       >
         cancel
       </Button>
