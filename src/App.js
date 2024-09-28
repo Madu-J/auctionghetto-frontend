@@ -55,28 +55,27 @@ function App() {
         <Route exact path="/signin" component={SignInForm} />
         <Route exact path="/signup" component={SignUpForm} />
         <Route 
-          exact 
-          path="/auctions/create" 
-          render={() => <AuctionCreateForm 
-        />} 
+        exact 
+        path="/auctions/create" 
+        render={() => <AuctionCreateForm />} 
         />
         <Route exact path="/auctions/:id" render={() => <AuctionPage />} />
         <Route exact path="/auctions/:id/edit" render={() => <AuctionEditForm />} />
         <Route exact path="/auctioneers/:id" render={() => <AuctioneerPage />} />
-        <Route
-          exact
-          path="/auctioneers/:id/edit/username"
-          render={() => <UsernameForm />}
+        <Route 
+        exact 
+        path="/auctioneers/:id/edit/username" 
+        render={() => <UsernameForm />} 
         />
-        <Route
-          exact
-          path="/auctioneers/:id/edit/password"
-          render={() => <UserPasswordForm />}
+        <Route 
+        exact 
+        path="/auctioneers/:id/edit/password" 
+        render={() => <UserPasswordForm />} 
         />
-        <Route
-          exact
-          path="/auctioneers/:id/edit"
-          render={() => <AuctioneerEditForm />}
+        <Route 
+        exact 
+        path="/auctioneers/:id/edit" 
+        render={() => <AuctioneerEditForm />} 
         />
         <Route render={() => <NotFound />} />
         </Switch>
