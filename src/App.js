@@ -54,18 +54,14 @@ function App() {
         />
         <Route exact path="/signin" component={SignInForm} />
         <Route exact path="/signup" component={SignUpForm} />
-        <Route 
-        exact 
-        path="/auctions/create" 
-        render={() => <AuctionCreateForm />} 
-        />
+        <Route exact path="/auctions/create" render={() => <AuctionCreateForm />} />
         <Route exact path="/auctions/:id" render={() => <AuctionPage />} />
         <Route exact path="/auctions/:id/edit" render={() => <AuctionEditForm />} />
         <Route exact path="/auctioneers/:id" render={() => <AuctioneerPage />} />
         <Route 
-        exact 
+        exact
         path="/auctioneers/:id/edit/username" 
-        render={() => <UsernameForm />} 
+        render={() => <UsernameForm />}
         />
         <Route 
         exact 
