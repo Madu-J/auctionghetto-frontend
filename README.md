@@ -33,10 +33,14 @@
 
  - [User Stories](#user-stories)
 
- - [Design](#design)
+ - [Design and Color](#design-and-color)
+
+  - [Design and structure](#design-and-structure)
 
 + [Feature](#feature)
      - [Future Features](#future-features)
++ [Testing](#testing)
+     - [Testing](#testing)
      - [Bugs](#bugs)
      - [Fixed Bugs](#fixed-bugs)
      - [Remaining Bugs](#remaining-bugs)
@@ -110,6 +114,7 @@
    When a user opens the auction page, they are required to log in first in order to bookmark their choice product and have the option to follow them. User won't be able to bookmark their own listed products. The navbar dynamically updates its links based on the user's state. For instance, if a user is logged in, they will see related to their account, such as auctioneer, follow, unfollow, and bookmark an item.
 
    In addition, the navbar incorporates a search bar. This search function enables users to search among the various listings available on the site. By simply entering keywords or specific criteria into the search bar, users can quickly find relevant listings, making their browsing experience more efficient and tailored to their preferences.
+   
    ![Navbar_png](./docs/img/navbar.png)
 
 <br>
@@ -122,6 +127,7 @@
 
 - Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
 The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
+
 ![Auctionghetto_Listing](./docs/img/additem.png)
 
 <br>
@@ -134,7 +140,9 @@ Each auctionghetto listing within the platform provides vital information to ass
 
 Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
 The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
+
 ![Auction_page](./docs/img/feedm.png)
+
 ![Auction_mobile](./docs/img/feedm.png)
 
 <br>
@@ -149,6 +157,7 @@ Updating Auctionghetto Post: On the Auctions Edit page, users can make changes a
 - Uploading New Images: Users may also have the option to upload new images or replace existing auction item to provide a potential buyer with clearer picture of auction item.
 
 - Updating data and saving changes: If there is error or mistake in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
+
 ![Auction Edit Page](./docs/img/auctioneditp.png)
 
 <br>
@@ -160,7 +169,8 @@ Updating Auctionghetto Post: On the Auctions Edit page, users can make changes a
 The auctioneer page allows sellers to create a visually appealing and informative presentation of their product. They can include high-quality images, and to engage users and convey their brand identity effectively.
 
 The auctioneer page serves as a critical component of the platform, enabling sellers to effectively market their auction products and increased visibility and locations for pick up.
-![Auctioneer_Page](docs/img/auctioneerp.png)
+
+![Auctioneer_Page](docs/img/auctioneerpage.png)
 
 <br>
 
@@ -170,7 +180,12 @@ The auctioneer page serves as a critical component of the platform, enabling sel
 
 - This indispensable functionality enables users to preserve their relevancy in the market by 
 consistently presenting the most current and pertinent details about who they are and their products to potential customers.
+
+<br>
 ![Edit_page_Auctioneer](./docs/img/editauctioneerp.png)
+
+<br>
+
 ![Edit_page_Auctioneer](./docs/img/adminpa.png)
 
 <br>
@@ -181,6 +196,7 @@ consistently presenting the most current and pertinent details about who they ar
 
 - Feed page serves as a convenient and centralized platform for users to stay constantly 
 updated with the latest inventory from their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
+
 ![Feed_Page](./docs/img/feedp.png)
 
 <br>
@@ -201,6 +217,29 @@ allows users to make comparing and considering options, making it easier for the
 - Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
 
 - Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
+
+<br>
+
+# Testing
+
+- To view manual test documentaion. Click > [TEST.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/TEST.md)
+- Code underwent through Jigsaw validation.
+- [W3C Markup Validator](/validator-css/)
+
+<br>
+
+## Bugs
+
+#### Fixed Bugs
+- Avatar
+- Image - There was issues with images.
+- Importerror
+
+<br>
+
+## Remaining Bugs
+
+- No new bug found.
 
 <br>
 
@@ -226,29 +265,6 @@ allows users to make comparing and considering options, making it easier for the
 
 * The following modules were installed or enabled in Gitpod to assist with formatting and code linting:
 * ESLint - A code linter that identifies and reports patterns or coding errors in thecodebase.
-
-<br>
-
-# Testing
-
-- To view manual test documentaion. Click > [TEST.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/TEST.md)
-- Code underwent through Jigsaw validation.
-- [W3C Markup Validator](/validator-css/)
-
-<br>
-
-## Bugs
-
-#### Fixed Bugs
-- Avatar
-- Image - There was issues with images.
-- Importerror
-
-<br>
-
-## Remaining Bugs
-
-- No new bug found.
 
 <br>
 

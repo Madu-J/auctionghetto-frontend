@@ -33,5 +33,4 @@ The AuctioneerPage wireframe displays user account page on Auctionghetto. It pro
 ![Wireframe_page](/docs/img/sketch.md/auctioneer.png)
 
 
-
 Return to [README.md](https://github.com/Madu-J/auctionghetto-frontend?tab=readme-ov-file#auctiongetto--auction-website-for-all-materials)
