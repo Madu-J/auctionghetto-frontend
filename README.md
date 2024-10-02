@@ -313,7 +313,7 @@ allows users to make comparing and considering options, making it easier for the
 
 # Credit
 
-* React, Bootstrap, and Django documentation
+* React bootstrap documentation
 * CodeInstitute tutorial materials, tutors and mentor
 * Moments walkthrough project
 * Slack Overflow
