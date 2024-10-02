@@ -1,54 +1,37 @@
 <p>
-<h1 style="font-size: 45px; text-align: center; color: brown;"> Welcome to Auctiongetto website !</h1>
+<h1 style="font-size: 45px; text-align: center; color: brown;">Auctiongetto | Auction website for all materials!</h1>
 </p>
 
 - ![amiresponsive](./docs/img/amiresponsive.png)
 
 <br>
-                                           
-##  Auctiongetto | Auction website for all materials!
-
-  Auctionghetto is an auction platform where potential users sample and sale their products. Our aim is
-  to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
-
-  Following features are available in our site
-  In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
-  Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
-
-  You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
-
-<br>
-
-#### Auctionghetto-live app :
-- Click[here](https://auctionghetto-65bba3a96be0.herokuapp.com/)
- 
- #### Follow the link below to view Backend repository of this project :
- - [Auctionghetto backend](https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
-
-<br>
 
 ## Table of Contents
 
- - [User Experience (UX)](#user-experience-ux)
-
- - [User Stories](#user-stories)
-
- - [Design and Color](#design-and-color)
-
+  - [User Experience (UX)](#user-experience-ux)
+  - [Live app & Links](#live-app-&-links)
+  - [User Stories](#user-stories)
+    - [Agile methodology](#agile-methodology)
+  - [Design and Color](#design-and-color)
   - [Design and structure](#design-and-structure)
-
 + [Feature](#feature)
-     - [Future Features](#future-features)
+     - [Navbar & Search functionality](#navbar-&-search-functionality)
+     - [Auctionghetto Listings](#auctionghetto-listings-page)
+     - [Action Details Page](#action-details-page)
+     - [Auctions Edit page](#auctions-edit-page)
+     - [Actioneer Page](#actioneer-page)
+     - [Edit Actioneer](#edit-actioneer)
+     - [Feed Page](#feed-page)
+     - [Bookmark Page](#bookmark-page)
++ [Future Features](#future-features)
+     - [Payment System & Bidder Page](#payment-system-&-bidder-page)
 + [Testing](#testing)
      - [Testing](#testing)
      - [Bugs](#bugs)
      - [Fixed Bugs](#fixed-bugs)
      - [Remaining Bugs](#remaining-bugs)
+- [Language and Framework Used](#language-and-framework-used)
 - [Technologies Used](#technologies-used)
-     - [Languages and Frameworks Used](#languages-and-frameworks-used)
-     - [Python Modules Used](#python-modules-used)
-     - [Packages Used](#packages-used)
-     - [Programs and Tools Used](#programs-and-tools-used)
 - [Deployment](#deployment)
     - [Deploying to GitHub](#deploying-to-github)
     - [Deploying with Heroku](#deploying-with-heroku)
@@ -56,24 +39,31 @@
      - [Credit](#credit)
      - [Media](#media)
     
-
 # User Experience (UX)
 
 - Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
-## Following features are available in our site
+- In Auctionghetto we look forward in bulding an e commmerce and digital marketing website with an uninterruptible user experience with React with Django rest-api, and offering user-friendly interface that allows sellers to effortlessly create captivating product listings on our site. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
 
-- In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
-
-- Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
+- Finding your choice product with our advanced search filters functionality. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
 
 - You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
 
 <br>
 
+# Live app & Links
+
+#### Auctionghetto-live app :
+- Click > [here](https://auctionghetto-65bba3a96be0.herokuapp.com/)
+ 
+ #### Follow the link below to view Backend repository of this project :
+ - [Auctionghetto backend](https://github.com/Madu-J/auctionghetto-backend/blob/main/README.md).
+
+<br>
+
 # User Stories
 
- * The user stories are available to view in  Github, under Auctionghetto backend repository. Moreso, to view highlight or few specific issues about the frntend. The links below provide you with the user stories.
+ * The user stories are available to view in Github, under Auctionghetto backend repository. Moreso, to view highlight or few specific issues about the frntend. The links below provide you with the user stories.
    
  - To view User-Story frontend - Click > [here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/UserStory.md)
 
@@ -105,7 +95,7 @@
 
 <br>
 
- ## Navbar & Search
+ ## Navbar & Search functionality
 
    The navbar allow users to explore different sections and easily navigate throughout the site pages of the website conveniently. Whether it's accessing specific categories, browsing through listings, or accessing account-related information, the navbar provides a streamlined way to navigate the site.
 
@@ -180,6 +170,7 @@ The auctioneer page serves as a critical component of the platform, enabling sel
 consistently presenting the most current and pertinent details about who they are and their products to potential customers.
 
 <br>
+
 ![Edit_page_Auctioneer](./docs/img/editauctioneerp.png)
 
 <br>
@@ -212,6 +203,8 @@ allows users to make comparing and considering options, making it easier for the
 
 # Future Features
 
+## Payment System & Bidder Page
+
 - Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
 
 - Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
@@ -226,9 +219,9 @@ allows users to make comparing and considering options, making it easier for the
 
 <br>
 
-## Bugs
+# Bugs
 
-#### Fixed Bugs
+## Fixed Bugs
 - Avatar
 - Image - There was issues with images.
 - Importerror
@@ -241,9 +234,12 @@ allows users to make comparing and considering options, making it easier for the
 
 <br>
 
-# Technologies Used
+# Language and Framework Used
+- Languages, JavaScript, HTML5 and CSS3
 
-* Languages, JavaScript, HTML5 and CSS3
+<br>
+
+# Technologies Used
 
 * Frameworks, Libraries & Programs Used
 
@@ -267,8 +263,6 @@ allows users to make comparing and considering options, making it easier for the
 <br>
 
 # Deployment
-
-<br>
 
 #### To deploy the project, follow these steps:
 
@@ -319,9 +313,10 @@ allows users to make comparing and considering options, making it easier for the
 
 # Credit
 
-* React Bootstrap documentation and examples
-* CodeInstitute tutorial materials and tutors
+* React, Bootstrap, and Django documentation
+* CodeInstitute tutorial materials, tutors and mentor
 * Moments walkthrough project
+* Slack Overflow
 * Autotraders
 * Google search engine
 
