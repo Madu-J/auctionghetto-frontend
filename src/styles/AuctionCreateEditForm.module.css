@@ -1,4 +1,42 @@
-.Container {
-    max-height: 343px;
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 130px;
 }
-
+  
+.title {
+    font-size: 80px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+  
+.form {
+    margin-bottom: 60px;
+}
+  
+.label {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 50px;
+}
+  
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.form textarea {
+    height: 150px;
+}
