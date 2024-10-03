@@ -99,8 +99,8 @@ const NavBar = () => {
       >
         <Container>
           <NavLink to="/">
-          <Navbar.Brand className="mr-0">
-            <img src={logo} alt="logo" height="45" />
+          <Navbar.Brand>
+            <img src={logo} alt="logo" height="30" />
             <div className={styles.Slogan}>
             <span>Welcome to Auctionghetto</span>
             </div>
@@ -114,6 +114,7 @@ const NavBar = () => {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
+
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>

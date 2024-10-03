@@ -59,6 +59,7 @@ i {
     color: #333;
     font-size: 1rem;
     padding: 7px;
+    vertical-align: middle;
 }
  
 nav i {
@@ -91,15 +92,4 @@ figure {
 
 *::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-@media (max-width: 500px) {
-    body {
-      font-size: 0.75rem;
-    }
-
-    i {
-      font-size: 0.65rem;
-      padding: 3px;
-    }
 }
