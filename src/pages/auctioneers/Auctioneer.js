@@ -7,7 +7,7 @@ import { useSetAuctioneerData } from '../../contexts/AuctioneerDataContext';
 import { Link } from 'react-router-dom';
 import Avatar from '../../components/Avatar';
 
-//Component used for auctioneer information and avatar
+/* Component used for auctioneer information and avatar */
 const Auctioneer = (props) => {
   const { auctioneer, mobile, imageSize = 45 } = props;
   const { id, following_id, image, owner } = auctioneer;
@@ -35,14 +35,14 @@ const Auctioneer = (props) => {
           !is_owner &&
           (following_id ? (
             <Button
-              className={`${btnStyles.Button} ${btnStyles.BrownOutline}`}
+              className={`${btnStyles.Button} ${btnStyles.BlackOutline}`}
               onClick={() => handleUnfollow(auctioneer)}
             >
               unfollow
             </Button>
           ) : (
             <Button
-              className={`${btnStyles.Button} ${btnStyles.Brown}`}
+              className={`${btnStyles.Button} ${btnStyles.Black}`}
               onClick={() => handleFollow(auctioneer)}
             >
               follow

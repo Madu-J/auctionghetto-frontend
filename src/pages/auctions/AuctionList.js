@@ -8,8 +8,8 @@ import styles from '../../styles/Auction.module.css';
 import { axiosRes } from '../../api/axiosDefaults';
 
 
-// This component creates each Auction on the landing page
-// AuctionList component genereates the complete list of Auctions.
+/* This component creates each Auction on the landing page */
+/* AuctionList component genereates the complete list of Auctions */
 const AuctionList = (props) => {
     const {
       id,

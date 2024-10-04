@@ -19,7 +19,7 @@ import NoResults from '../../assets/no-results.png';
 import { AuctioneerEditDropdown } from '../../components/MoreDropdown';
 
 
-/*Displays information comprehensively about auctioneer, owner of a profile.
+/* Displays information comprehensively about auctioneer, owner of a profile.
 This component includes functionality to view all the auction listed by the auctioneer,
 as well as follower/following statistics.*/
 const AuctioneerPage = () => {
@@ -86,14 +86,14 @@ const AuctioneerPage = () => {
               !is_owner &&
               (auctioneer?.following_id ? (
                 <Button
-                  className={`${btnStyles.Button} ${btnStyles.BrownOutline}`}
+                  className={`${btnStyles.Button} ${btnStyles.BlackOutline}`}
                   onClick={() => handleUnfollow(auctioneer)}
                 >
                   unfollow
                 </Button>
               ) : (
                 <Button
-                  className={`${btnStyles.Button} ${btnStyles.Brown}`}
+                  className={`${btnStyles.Button} ${btnStyles.Black}`}
                   onClick={() => handleFollow(auctioneer)}
                 >
                   follow

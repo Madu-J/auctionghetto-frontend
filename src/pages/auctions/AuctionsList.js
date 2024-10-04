@@ -17,7 +17,7 @@ import { fetchMoreData } from "../../utils/utils";
 import PopularAuctioneers from "../auctioneers/PopularAuctioneers";
 
 
-// Imports Auction component to genereate list of Auctions on the main page.
+/* Imports Auction component to genereate list of Auctions on the main page */
 function AuctionsList({ message, filter = "" }) {
 
   const [auctions, setAuctions] = useState({ results: [] });

@@ -14,9 +14,9 @@ import {
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
 
-// Component used for creating a Auctionghetto posting.
-// Collects input data from user in the forms and pass to api.
-// Includes error handling that shows an alert to the user.
+/* Component used for creating a Auctionghetto posting
+ Collects input data from user in the forms and pass to api
+ Includes error handling that shows an alert to the user */
 function AuctionCreateForm() {
   useRedirect("loggedOut");
  

@@ -13,7 +13,7 @@ import Avatar from './Avatar';
 import useClickOutsideToggle from '../hooks/useClickOutsideToggle';
 
 
-// Navigation component and links
+/* Navigation component and links */
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();

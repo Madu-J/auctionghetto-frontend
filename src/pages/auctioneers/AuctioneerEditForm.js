@@ -20,7 +20,7 @@ import btnStyles from "../../styles/Button.module.css";
 
 
 /* Component includes the form for creating or updating
-user profile and error handling input fields*/
+user profile and error handling input fields */
 const AuctioneerEditForm = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();

@@ -5,7 +5,7 @@ import Auctioneer from './Auctioneer';
 import { useAuctioneerData } from '../../contexts/AuctioneerDataContext';
 import Asset from '../../components/Asset';
 
-// To create sideBar with top sellers
+/* To create sideBar with top sellers */
 const PopularAuctioneers = ({ mobile }) => {
   const { popularAuctioneers } = useAuctioneerData();
 
