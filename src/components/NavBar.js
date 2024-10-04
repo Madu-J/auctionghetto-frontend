@@ -100,7 +100,7 @@ const NavBar = () => {
         <Container>
           <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="30" />
+            <img src={logo} alt="logo" height="35" />
             <div className={styles.Slogan}>
             <span>Welcome to Auctionghetto</span>
             </div>
@@ -113,7 +113,7 @@ const NavBar = () => {
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto text-left">
+          <Nav className="ml-auto text-right">
 
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
