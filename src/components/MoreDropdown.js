@@ -49,7 +49,7 @@ export const MoreDropdown = ({handleEdit, handleDelete}) => {
 export function AuctioneerEditDropdown({ id }) {
   const history = useHistory();
   return (
-    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">Update auctioneer
+    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left"> Update
       <Dropdown.Toggle as={ThreeDots} 
       />
       <Dropdown.Menu>
