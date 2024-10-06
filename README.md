@@ -1,6 +1,6 @@
-<p>
-<h1 style="font-size: 45px; text-align: center; color: brown;">Auctiongetto | Auction website for all materials!</h1>
-</p>
+- <p><h1 style="font-size: 45px; text-align: center; color: brown;">Auctiongetto | Auction website for all materials!
+</h1>
+- </p>
 
 - ![amiresponsive](./docs/img/amiresponsive.png)
 
@@ -84,7 +84,7 @@
  # Design and structure
 
  - <p align="center">
- <img src="./docs/img/Site_structure.png" alt="site_structure">
+ <img src="./docs/img/datastr.png" alt="site_structure">
  </p>
 
 - To view website's page sketching. Click > [Wireframe.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/Wireframe.md)
@@ -209,6 +209,9 @@ allows users to make comparing and considering options, making it easier for the
 
 - Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
+- Comment function: Creating an interactive section where users can interact with each other 
+and share their views about their various interest or auction listings Auctionghetto.
+
 <br>
 
 # Testing
@@ -220,11 +223,16 @@ allows users to make comparing and considering options, making it easier for the
 <br>
 
 # Bugs
+- Image - There was issues with image validate method function from backend.
+- Avatar - There a broken image url from wrongly configured path from backend.
+- Image - There was a sintax error in formdata append method causing image from not rendering along with post.
+- Import error
 
 ## Fixed Bugs
 - Avatar
-- Image - There was issues with images.
-- Importerror
+- Image 
+- Sintax error
+- Import error
 
 <br>
 
