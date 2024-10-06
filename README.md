@@ -81,9 +81,12 @@
 
 <br>
 
+- <p align="center">
+ <h5><img src="./docs/img/datastr.png" alt="site_structure"></h5>
+ </p>
+
  # Design and structure
- - ![site_structure](./docs/img/datastr.png)
- 
+ -![site_structure](./docs/img/datastr.png
 - To view website's page sketching. Click > [Wireframe.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/Wireframe.md)
 
 <br>
@@ -208,6 +211,8 @@ allows users to make comparing and considering options, making it easier for the
 
 - Comment function: Creating an interactive section where users can interact with each other 
 and share their views about their various interest or auction listings Auctionghetto.
+
+- About page: Adding "About page" to make Auctionghetto more informative about website goal.
 
 <br>
 
