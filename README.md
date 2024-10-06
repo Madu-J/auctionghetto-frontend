@@ -223,9 +223,9 @@ and share their views about their various interest or auction listings Auctiongh
 <br>
 
 # Bugs
-- Image - There was issues with image validate method function from backend.
-- Avatar - There a broken image url from wrongly configured path from backend.
-- Image - There was a sintax error in formdata append method causing image from not rendering along with post.
+- Image - Fixed issues with image validate method function from backend.
+- Avatar - Handled broken image url and wrongly configured path from backend.
+- Image - Fixed sintax error in formdata append method causing image from not rendering along with post.
 - Import error
 
 ## Fixed Bugs
