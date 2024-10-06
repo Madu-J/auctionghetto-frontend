@@ -82,10 +82,8 @@
 <br>
 
  # Design and structure
-
  - ![site_structure](./docs/img/datastr.png)
  
-
 - To view website's page sketching. Click > [Wireframe.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/Wireframe.md)
 
 <br>
