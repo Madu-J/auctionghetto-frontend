@@ -81,12 +81,10 @@
 
 <br>
 
-- <p align="center">
- <img src="./docs/img/datastr.png" lenght="60%" alt="site_structure">
- </p>
-
  # Design and structure
- -![site_structure](./docs/img/datastr.png
+
+ - ![site_structure](./docs/img/datastr.png)
+
 - To view website's page sketching. Click > [Wireframe.md](https://github.com/Madu-J/auctionghetto-frontend/blob/main/docs/Wireframe.md)
 
 <br>
