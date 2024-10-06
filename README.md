@@ -82,7 +82,7 @@
 <br>
 
 - <p align="center">
- <h5><img src="./docs/img/datastr.png" alt="site_structure"></h5>
+ <img src="./docs/img/datastr.png" lenght="60%" alt="site_structure">
  </p>
 
  # Design and structure
